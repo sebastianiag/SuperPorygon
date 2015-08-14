@@ -8,7 +8,7 @@ by Eto
 
 
 ##################### Description ###########################
-Colosseo is an automated Pokemon battle simulator with an 
+SuperPorygon is an automated Pokemon battle simulator with an 
 integrated model-based learning Artificial Intelligence agent
 capable of learning how to build a pokemon team and devise 
 strategies that can beat common and high ranked teams on the meta
