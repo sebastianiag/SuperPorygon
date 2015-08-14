@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Counter | PokÃ©mon moves | PokÃ©mon Database</title>
+
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic|Open+Sans+Condensed:700">
+	<link rel="stylesheet" href="/static/css/min/pokemondb.23.css">
+	<link rel="stylesheet" href="/static/css/min/pkmn-icons.3.css">
+	<link rel="stylesheet" href="/static/css/min/moves.1.css">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<meta name="description" content="Details and added effects for the PokÃ©mon attack 'Counter', including all the PokÃ©mon that can learn it.">
+	<link rel="canonical" href="http://pokemondb.net/move/counter">
+	<link rel="contents" href="http://pokemondb.net/move/all">
+
+	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+	<link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-precomposed.png">
+	<link rel="alternate" type="application/rss+xml" href="http://pokemondb.net/news/feed" title="The Pokemon Database newsfeed">
+
+	<!--[if lt IE 9]>
+	<script src="/static/js/html5shiv.js"></script>
+	<link rel="stylesheet" href="/static/css/ie.css">
+	<![endif]-->
+
+	<script>
+	var _gaq = [['_setAccount', 'UA-1974891-7'],['_trackPageview']];
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = 'http://www.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+	</script>
+	<script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</head>
+
+<body>
+
+<header class="grid-wrapper">
+	<a class="header-logo" href="/">PokÃ©mon Database</a>
+
+	<form method="get" action="/search" class="sitesearch-form">
+		<input type="text" name="q" id="sitesearch" autocomplete="off" placeholder="Enter keywords" class="sitesearch-input">
+		<button type="submit" class="sitesearch-btn">Search</button>
+		<div id="sitesearch-results" class="sitesearch-results"></div>
+	</form>
+</header>
+
+
+<nav class="main-menu grid-wrapper">
+<ul class="main-menu-list">
+	<li><a href="/sitemap">PokÃ©mon data</a>
+		<ul class="main-menu-sub">
+			<li><a href="/pokedex">PokÃ©dex</a>
+			<li><a href="/move">Moves</a>
+			<li><a href="/type">Type chart</a>
+			<li><a href="/ability">Abilities</a>
+			<li><a href="/item">Items</a>
+			<li><a href="/evolution">Evolution chains</a>
+			<li><a href="/location">PokÃ©mon locations</a>
+			<li><a href="/sprites">Sprite gallery</a>
+			<li><a href="/pokedex/all">PokÃ©mon stats</a>
+		</ul>
+	</li>
+	<li><a href="/sitemap">Game mechanics</a>
+		<ul class="main-menu-sub">
+			<li><a href="/mechanics/breeding">Breeding &amp; egg groups</a>
+			<li><a href="/mechanics/move-tutors">Move Tutors</a>
+			<li><a href="/type/dual">Dual type chart</a>
+			<li><a href="/ev">Effort Values (EVs)</a>
+			<li><a href="/mechanics/natures">Natures</a>
+			<li><a href="/mechanics/hidden">IVs/Personality</a>
+			<li class="hr-title">Useful tools
+			<li><a href="/tools/moveset-search">Moveset searcher</a>
+			<li><a href="/tools/type-coverage">Type coverage checker</a>
+		</ul>
+	</li>
+	<li><a href="/sitemap">PokÃ©mon games</a>
+		<ul class="main-menu-sub">
+			<li><a href="/omega-ruby-alpha-sapphire">Omega Ruby &amp; Alpha Sapphire</a>
+			<li><a href="/x-y">X &amp; Y</a>
+			<li class="hr">
+			<li><a href="/black-white-2">Black 2 &amp; White 2</a>
+			<li><a href="/black-white">Black &amp; White</a>
+			<li class="hr">
+			<li><a href="/heartgold-soulsilver">HeartGold &amp; SoulSilver</a>
+			<li><a href="/platinum">Platinum</a>
+			<li><a href="/diamond-pearl">Diamond &amp; Pearl</a>
+			<li class="hr">
+			<li><a href="/emerald">Emerald</a>
+			<li><a href="/firered-leafgreen">FireRed &amp; LeafGreen</a>
+			<li><a href="/ruby-sapphire">Ruby &amp; Sapphire</a>
+			<li class="hr">
+			<li><a href="/crystal">Crystal</a>
+			<li><a href="/gold-silver">Gold &amp; Silver</a>
+			<li class="hr">
+			<li><a href="/yellow">Yellow</a>
+			<li><a href="/red-blue">Red &amp; Blue</a>
+			<li class="hr">
+			<li><a href="/spinoff/pokemon-bank">PokÃ©mon Bank</a>
+		</ul>
+	</li>
+	<li><a href="/sitemap">Community</a>
+		<ul class="main-menu-sub">
+			<li><a href="/pokebase/">PokÃ©mon Q&amp;A</a>
+			<li><a href="/pokebase/rmt">PokÃ©mon Rate My Team</a>
+			<li><a href="/pokebase/chat">Chat Room</a>
+			<li><a href="/pokebase/meta/">Meta (Suggestion Box)</a>
+		</ul>
+	</li>
+	<li><a href="/sitemap">Other information</a>
+		<ul class="main-menu-sub">
+			<li><a href="/">PokÃ©mon News (home page)</a>
+			<li><a href="/maps">Maps/Puzzles</a>
+			<li><a href="/events">PokÃ©mon events &amp; passwords</a>
+			<li><a href="/etymology">PokÃ©mon name origins</a>
+			<li><a href="/glossary">PokÃ©mon dictionary</a>
+			<li><a href="/about">About/Contact us</a>
+			<li class="hr-title">Quick links
+			<li><a href="/pokedex/national">Full PokÃ©mon list</a>
+			<li><a href="/pokedex/game/x-y">X &amp; Y PokÃ©dex</a>
+			<!-- <li><a href="/pokedex/game/omega-ruby-alpha-sapphire">Omega Ruby &amp; Alpha Sapphire PokÃ©dex</a> -->
+		</ul>
+	</li>
+</ul>
+</nav>
+
+<article class="main-content grid-wrapper">
+
+<h1>Counter (move)</h1>
+
+
+<ul class="nav-list island">
+	<li class="title">Contents
+	<li><a href="#move-descr">Flavor text</a>
+	<li><a href="#move-level">Learnt by level up</a></li>
+<li><a href="#move-egg">Learnt by breeding</a></li>
+<li><a href="#move-oldgen">Previous games</a></li></ul>
+
+	<div class="share-icons">
+		<i class="share-blurb">Share this page:</i>
+		<a href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fpokemondb.net%2Fmove%2Fcounter&amp;t=Counter+%7C+Pok%C3%A9mon+moves"
+			class="icon-facebook" title="Share on Facebook" target="_blank">Facebook</a>
+		<a href="http://twitter.com/share?url=http%3A%2F%2Fpokemondb.net%2Fmove%2Fcounter&amp;text=Counter+%7C+Pok%C3%A9mon+moves+%28via+%40pokemondb%29+"
+			class="icon-twitter" title="Tweet this page" target="_blank">Twitter</a>
+		<a href="https://plus.google.com/share?url=http%3A%2F%2Fpokemondb.net%2Fmove%2Fcounter"
+			class="icon-gplus" title="Share on Google+" target="_blank">Google+</a>
+		<a href="mailto:?subject=Pokemon+link&amp;body=Check+out+this+cool+Pokemon+page%21%0A%0ACounter+%7C+Pok%C3%A9mon+moves%0Ahttp%3A%2F%2Fpokemondb.net%2Fmove%2Fcounter"
+			class="icon-email" title="Email this page" target="_blank">Email</a>
+	</div>
+	
+<div class="colset">
+	<div class="col desk-span-3 lap-span-4">
+		<h2>Move data</h2>
+
+		<table class="vitals-table key-table">
+		<tbody>
+		<tr>
+			<th>Type</th>
+			<td><a class="type-icon type-fighting"  href="/type/fighting" >Fighting</a></td>
+		</tr>
+		<tr>
+			<th>Category</th>
+			<td><i class="icon-move-cat physical" title="Physical">Physical</i> Physical</td>
+		</tr>
+		<tr>
+			<th>Power</th>
+			<td>-</td>
+		</tr>
+		<tr>
+			<th>Accuracy</th>
+			<td>100</td>
+		</tr>
+		<tr>
+			<th>PP</th>
+							<td>20 &nbsp;<small>(max. 32)</small></td>
+					</tr>
+				<tr>
+			<th>Priority</th>
+			<td>-5</td>
+		</tr>
+				<tr>
+			<th>Introduced</th>
+			<td>Generation 1</td>
+		</tr>
+		</tbody>
+		</table>
+
+			<h3>Technical/Hidden Machine</h3>
+		<table class="vitals-table">
+		<tbody>
+					<tr>
+				<th>Red/Blue<br>Yellow</th>
+				<td><b>TM18</b></td>
+			</tr>
+				</tbody>
+		</table>
+		</div>
+
+	<div class="col desk-span-9 lap-span-8">
+		<h2 id="move-effects">Effects</h2>
+
+					<p>When hit by a Physical Attack, user strikes back with 2x power.					
+			</div>
+</div>
+
+
+<div class="ad-responsive">
+	<style>
+  .adresp-leaderboard { width: 320px; height: 50px; margin-left: -5px; }
+  @media(min-width: 795px) { .adresp-leaderboard { width: 728px; height: 90px; } }
+</style>
+<!-- Pokemon [responsive] - leaderboard, text -->
+<ins class="adsbygoogle adresp-leaderboard"
+  style="display:inline-block"
+  data-ad-client="ca-pub-4942990752504243"
+  data-ad-slot="5568695004"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+
+<div class="colset">
+	<div class="col desk-span-4 lap-span-12">
+		<h2>Move target</h2>
+		<div class="move-target">	<div class="mt-pkmn mt-foe ">Foe</div>	<div class="mt-pkmn mt-foe ">Foe</div>	<div class="mt-pkmn mt-foe ">Foe</div>	<div class="mt-pkmn mt-user mt-selected">User</div>	<div class="mt-pkmn mt-user ">Ally</div>	<div class="mt-pkmn mt-user ">Ally</div></div>		<p style="color:#555753;text-align:center">Targets the user.</p>
+	</div>
+
+	<div class="col desk-span-8 lap-span-12">
+			<h2 id="move-descr">Game descriptions</h2>
+		<table class="vitals-table"><tbody><tr> <th>Gold/Silver<br>Crystal</th> <td>Returns a physical blow double.</td></tr><tr> <th>Ruby/Sapphire<br>Emerald</th> <td>Retaliates any physical hit with double the power.</td></tr><tr> <th>FireRed/LeafGreen</th> <td>A retaliation move that counters any physical hit with double the damage.</td></tr><tr> <th>Diamond/Pearl<br>Platinum<br>HeartGold/SoulSilver</th> <td>A retaliation move that counters any physical attack, inflicting double the damage taken.</td></tr><tr> <th>Black/White<br>Black 2/White 2</th> <td>A retaliation move that counters any physical attack, inflicting double the damage taken.</td></tr><tr> <th>X/Y</th> <td>A retaliation move that counters any physical attack, inflicting double the damage taken.</td></tr></tbody></table>		</div>
+</div>
+
+
+
+	<h2 id="move-level">Learnt by level up</h2>
+	<p>These PokÃ©mon learn <em>Counter</em> at the level specified. The numbers given are for
+		<em>PokÃ©mon Omega Ruby &amp; Alpha Sapphire</em> and may vary in other games; check the respective PokÃ©dex pages for details.</p>
+
+	<div class="infocard-list"><span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n107"></i></span><span class="infocard-data"><a href="/pokedex/hitmonchan" class="ent-name">Hitmonchan</a><br><small class="aside">#107 / <a href="/type/fighting" class="itype fighting">Fighting</a></small><br><small class="aside">Level 1</small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n107"></i></span><span class="infocard-data"><a href="/pokedex/hitmonchan" class="ent-name">Hitmonchan</a><br><small class="aside">#107 / <a href="/type/fighting" class="itype fighting">Fighting</a></small><br><small class="aside">Level 61</small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n185"></i></span><span class="infocard-data"><a href="/pokedex/sudowoodo" class="ent-name">Sudowoodo</a><br><small class="aside">#185 / <a href="/type/rock" class="itype rock">Rock</a></small><br><small class="aside">Level 33</small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n202"></i></span><span class="infocard-data"><a href="/pokedex/wobbuffet" class="ent-name">Wobbuffet</a><br><small class="aside">#202 / <a href="/type/psychic" class="itype psychic">Psychic</a></small><br><small class="aside">Level 1</small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n214"></i></span><span class="infocard-data"><a href="/pokedex/heracross" class="ent-name">Heracross</a><br><small class="aside">#214 / <a href="/type/bug" class="itype bug">Bug</a> &middot; <a href="/type/fighting" class="itype fighting">Fighting</a></small><br><small class="aside">Level 19</small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n237"></i></span><span class="infocard-data"><a href="/pokedex/hitmontop" class="ent-name">Hitmontop</a><br><small class="aside">#237 / <a href="/type/fighting" class="itype fighting">Fighting</a></small><br><small class="aside">Level 28</small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n286"></i></span><span class="infocard-data"><a href="/pokedex/breloom" class="ent-name">Breloom</a><br><small class="aside">#286 / <a href="/type/grass" class="itype grass">Grass</a> &middot; <a href="/type/fighting" class="itype fighting">Fighting</a></small><br><small class="aside">Level 22</small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n287"></i></span><span class="infocard-data"><a href="/pokedex/slakoth" class="ent-name">Slakoth</a><br><small class="aside">#287 / <a href="/type/normal" class="itype normal">Normal</a></small><br><small class="aside">Level 30</small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n288"></i></span><span class="infocard-data"><a href="/pokedex/vigoroth" class="ent-name">Vigoroth</a><br><small class="aside">#288 / <a href="/type/normal" class="itype normal">Normal</a></small><br><small class="aside">Level 33</small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n289"></i></span><span class="infocard-data"><a href="/pokedex/slaking" class="ent-name">Slaking</a><br><small class="aside">#289 / <a href="/type/normal" class="itype normal">Normal</a></small><br><small class="aside">Level 33</small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n307"></i></span><span class="infocard-data"><a href="/pokedex/meditite" class="ent-name">Meditite</a><br><small class="aside">#307 / <a href="/type/fighting" class="itype fighting">Fighting</a> &middot; <a href="/type/psychic" class="itype psychic">Psychic</a></small><br><small class="aside">Level 44</small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n308"></i></span><span class="infocard-data"><a href="/pokedex/medicham" class="ent-name">Medicham</a><br><small class="aside">#308 / <a href="/type/fighting" class="itype fighting">Fighting</a> &middot; <a href="/type/psychic" class="itype psychic">Psychic</a></small><br><small class="aside">Level 53</small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n360"></i></span><span class="infocard-data"><a href="/pokedex/wynaut" class="ent-name">Wynaut</a><br><small class="aside">#360 / <a href="/type/psychic" class="itype psychic">Psychic</a></small><br><small class="aside">Level 15</small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n386-defense"></i></span><span class="infocard-data"><a href="/pokedex/deoxys" class="ent-name">Deoxys</a><br><small class="aside">Defense Forme</small><br><small class="aside">#386 / <a href="/type/psychic" class="itype psychic">Psychic</a></small><br><small class="aside">Level 73</small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n438"></i></span><span class="infocard-data"><a href="/pokedex/bonsly" class="ent-name">Bonsly</a><br><small class="aside">#438 / <a href="/type/rock" class="itype rock">Rock</a></small><br><small class="aside">Level 33</small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n447"></i></span><span class="infocard-data"><a href="/pokedex/riolu" class="ent-name">Riolu</a><br><small class="aside">#447 / <a href="/type/fighting" class="itype fighting">Fighting</a></small><br><small class="aside">Level 6</small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n448"></i></span><span class="infocard-data"><a href="/pokedex/lucario" class="ent-name">Lucario</a><br><small class="aside">#448 / <a href="/type/fighting" class="itype fighting">Fighting</a> &middot; <a href="/type/steel" class="itype steel">Steel</a></small><br><small class="aside">Level 6</small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n539"></i></span><span class="infocard-data"><a href="/pokedex/sawk" class="ent-name">Sawk</a><br><small class="aside">#539 / <a href="/type/fighting" class="itype fighting">Fighting</a></small><br><small class="aside">Level 21</small></span></span>
+</div>
+
+
+	<h2 id="move-egg">Learnt by breeding</h2>
+	<p>These PokÃ©mon can learn <em>Counter</em> as an <a href="/mechanics/breeding">egg move</a>.
+		Their breeding groups are also shown for reference.</p>
+
+	<div class="infocard-list"><span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n4"></i></span><span class="infocard-data"><a href="/pokedex/charmander" class="ent-name">Charmander</a><br><small class="aside">#004 / <a href="/type/fire" class="itype fire">Fire</a></small><br><small class="aside"><a href="/mechanics/egg-groups/dragon">Dragon</a>, <a href="/mechanics/egg-groups/monster">Monster</a></small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n5"></i></span><span class="infocard-data"><a href="/pokedex/charmeleon" class="ent-name">Charmeleon</a><br><small class="aside">#005 / <a href="/type/fire" class="itype fire">Fire</a></small><br><small class="aside"><a href="/mechanics/egg-groups/dragon">Dragon</a>, <a href="/mechanics/egg-groups/monster">Monster</a></small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n6"></i></span><span class="infocard-data"><a href="/pokedex/charizard" class="ent-name">Charizard</a><br><small class="aside">#006 / <a href="/type/fire" class="itype fire">Fire</a> &middot; <a href="/type/flying" class="itype flying">Flying</a></small><br><small class="aside"><a href="/mechanics/egg-groups/dragon">Dragon</a>, <a href="/mechanics/egg-groups/monster">Monster</a></small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n19"></i></span><span class="infocard-data"><a href="/pokedex/rattata" class="ent-name">Rattata</a><br><small class="aside">#019 / <a href="/type/normal" class="itype normal">Normal</a></small><br><small class="aside"><a href="/mechanics/egg-groups/field">Field</a></small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n20"></i></span><span class="infocard-data"><a href="/pokedex/raticate" class="ent-name">Raticate</a><br><small class="aside">#020 / <a href="/type/normal" class="itype normal">Normal</a></small><br><small class="aside"><a href="/mechanics/egg-groups/field">Field</a></small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n27"></i></span><span class="infocard-data"><a href="/pokedex/sandshrew" class="ent-name">Sandshrew</a><br><small class="aside">#027 / <a href="/type/ground" class="itype ground">Ground</a></small><br><small class="aside"><a href="/mechanics/egg-groups/field">Field</a></small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n28"></i></span><span class="infocard-data"><a href="/pokedex/sandslash" class="ent-name">Sandslash</a><br><small class="aside">#028 / <a href="/type/ground" class="itype ground">Ground</a></small><br><small class="aside"><a href="/mechanics/egg-groups/field">Field</a></small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n29"></i></span><span class="infocard-data"><a href="/pokedex/nidoran-f" class="ent-name">Nidoranâ</a><br><small class="aside">#029 / <a href="/type/poison" class="itype poison">Poison</a></small><br><small class="aside"><a href="/mechanics/egg-groups/field">Field</a>, <a href="/mechanics/egg-groups/monster">Monster</a></small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n30"></i></span><span class="infocard-data"><a href="/pokedex/nidorina" class="ent-name">Nidorina</a><br><small class="aside">#030 / <a href="/type/poison" class="itype poison">Poison</a></small><br><small class="aside"><a href="/mechanics/egg-groups/undiscovered">Undiscovered</a></small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n31"></i></span><span class="infocard-data"><a href="/pokedex/nidoqueen" class="ent-name">Nidoqueen</a><br><small class="aside">#031 / <a href="/type/poison" class="itype poison">Poison</a> &middot; <a href="/type/ground" class="itype ground">Ground</a></small><br><small class="aside"><a href="/mechanics/egg-groups/undiscovered">Undiscovered</a></small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n32"></i></span><span class="infocard-data"><a href="/pokedex/nidoran-m" class="ent-name">Nidoranâ</a><br><small class="aside">#032 / <a href="/type/poison" class="itype poison">Poison</a></small><br><small class="aside"><a href="/mechanics/egg-groups/field">Field</a>, <a href="/mechanics/egg-groups/monster">Monster</a></small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n33"></i></span><span class="infocard-data"><a href="/pokedex/nidorino" class="ent-name">Nidorino</a><br><small class="aside">#033 / <a href="/type/poison" class="itype poison">Poison</a></small><br><small class="aside"><a href="/mechanics/egg-groups/field">Field</a>, <a href="/mechanics/egg-groups/monster">Monster</a></small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n34"></i></span><span class="infocard-data"><a href="/pokedex/nidoking" class="ent-name">Nidoking</a><br><small class="aside">#034 / <a href="/type/poison" class="itype poison">Poison</a> &middot; <a href="/type/ground" class="itype ground">Ground</a></small><br><small class="aside"><a href="/mechanics/egg-groups/field">Field</a>, <a href="/mechanics/egg-groups/monster">Monster</a></small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n46"></i></span><span class="infocard-data"><a href="/pokedex/paras" class="ent-name">Paras</a><br><small class="aside">#046 / <a href="/type/bug" class="itype bug">Bug</a> &middot; <a href="/type/grass" class="itype grass">Grass</a></small><br><small class="aside"><a href="/mechanics/egg-groups/bug">Bug</a>, <a href="/mechanics/egg-groups/grass">Grass</a></small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n47"></i></span><span class="infocard-data"><a href="/pokedex/parasect" class="ent-name">Parasect</a><br><small class="aside">#047 / <a href="/type/bug" class="itype bug">Bug</a> &middot; <a href="/type/grass" class="itype grass">Grass</a></small><br><small class="aside"><a href="/mechanics/egg-groups/bug">Bug</a>, <a href="/mechanics/egg-groups/grass">Grass</a></small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n56"></i></span><span class="infocard-data"><a href="/pokedex/mankey" class="ent-name">Mankey</a><br><small class="aside">#056 / <a href="/type/fighting" class="itype fighting">Fighting</a></small><br><small class="aside"><a href="/mechanics/egg-groups/field">Field</a></small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n57"></i></span><span class="infocard-data"><a href="/pokedex/primeape" class="ent-name">Primeape</a><br><small class="aside">#057 / <a href="/type/fighting" class="itype fighting">Fighting</a></small><br><small class="aside"><a href="/mechanics/egg-groups/field">Field</a></small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n66"></i></span><span class="infocard-data"><a href="/pokedex/machop" class="ent-name">Machop</a><br><small class="aside">#066 / <a href="/type/fighting" class="itype fighting">Fighting</a></small><br><small class="aside"><a href="/mechanics/egg-groups/human-like">Human-Like</a></small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n67"></i></span><span class="infocard-data"><a href="/pokedex/machoke" class="ent-name">Machoke</a><br><small class="aside">#067 / <a href="/type/fighting" class="itype fighting">Fighting</a></small><br><small class="aside"><a href="/mechanics/egg-groups/human-like">Human-Like</a></small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n68"></i></span><span class="infocard-data"><a href="/pokedex/machamp" class="ent-name">Machamp</a><br><small class="aside">#068 / <a href="/type/fighting" class="itype fighting">Fighting</a></small><br><small class="aside"><a href="/mechanics/egg-groups/human-like">Human-Like</a></small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n106"></i></span><span class="infocard-data"><a href="/pokedex/hitmonlee" class="ent-name">Hitmonlee</a><br><small class="aside">#106 / <a href="/type/fighting" class="itype fighting">Fighting</a></small><br><small class="aside"><a href="/mechanics/egg-groups/human-like">Human-Like</a></small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n107"></i></span><span class="infocard-data"><a href="/pokedex/hitmonchan" class="ent-name">Hitmonchan</a><br><small class="aside">#107 / <a href="/type/fighting" class="itype fighting">Fighting</a></small><br><small class="aside"><a href="/mechanics/egg-groups/human-like">Human-Like</a></small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n111"></i></span><span class="infocard-data"><a href="/pokedex/rhyhorn" class="ent-name">Rhyhorn</a><br><small class="aside">#111 / <a href="/type/ground" class="itype ground">Ground</a> &middot; <a href="/type/rock" class="itype rock">Rock</a></small><br><small class="aside"><a href="/mechanics/egg-groups/field">Field</a>, <a href="/mechanics/egg-groups/monster">Monster</a></small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n112"></i></span><span class="infocard-data"><a href="/pokedex/rhydon" class="ent-name">Rhydon</a><br><small class="aside">#112 / <a href="/type/ground" class="itype ground">Ground</a> &middot; <a href="/type/rock" class="itype rock">Rock</a></small><br><small class="aside"><a href="/mechanics/egg-groups/field">Field</a>, <a href="/mechanics/egg-groups/monster">Monster</a></small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n113"></i></span><span class="infocard-data"><a href="/pokedex/chansey" class="ent-name">Chansey</a><br><small class="aside">#113 / <a href="/type/normal" class="itype normal">Normal</a></small><br><small class="aside"><a href="/mechanics/egg-groups/fairy">Fairy</a></small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n115"></i></span><span class="infocard-data"><a href="/pokedex/kangaskhan" class="ent-name">Kangaskhan</a><br><small class="aside">#115 / <a href="/type/normal" class="itype normal">Normal</a></small><br><small class="aside"><a href="/mechanics/egg-groups/monster">Monster</a></small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n123"></i></span><span class="infocard-data"><a href="/pokedex/scyther" class="ent-name">Scyther</a><br><small class="aside">#123 / <a href="/type/bug" class="itype bug">Bug</a> &middot; <a href="/type/flying" class="itype flying">Flying</a></small><br><small class="aside"><a href="/mechanics/egg-groups/bug">Bug</a></small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n143"></i></span><span class="infocard-data"><a href="/pokedex/snorlax" class="ent-name">Snorlax</a><br><small class="aside">#143 / <a href="/type/normal" class="itype normal">Normal</a></small><br><small class="aside"><a href="/mechanics/egg-groups/monster">Monster</a></small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n152"></i></span><span class="infocard-data"><a href="/pokedex/chikorita" class="ent-name">Chikorita</a><br><small class="aside">#152 / <a href="/type/grass" class="itype grass">Grass</a></small><br><small class="aside"><a href="/mechanics/egg-groups/grass">Grass</a>, <a href="/mechanics/egg-groups/monster">Monster</a></small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n153"></i></span><span class="infocard-data"><a href="/pokedex/bayleef" class="ent-name">Bayleef</a><br><small class="aside">#153 / <a href="/type/grass" class="itype grass">Grass</a></small><br><small class="aside"><a href="/mechanics/egg-groups/grass">Grass</a>, <a href="/mechanics/egg-groups/monster">Monster</a></small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n154"></i></span><span class="infocard-data"><a href="/pokedex/meganium" class="ent-name">Meganium</a><br><small class="aside">#154 / <a href="/type/grass" class="itype grass">Grass</a></small><br><small class="aside"><a href="/mechanics/egg-groups/grass">Grass</a>, <a href="/mechanics/egg-groups/monster">Monster</a></small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n190"></i></span><span class="infocard-data"><a href="/pokedex/aipom" class="ent-name">Aipom</a><br><small class="aside">#190 / <a href="/type/normal" class="itype normal">Normal</a></small><br><small class="aside"><a href="/mechanics/egg-groups/field">Field</a></small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n194"></i></span><span class="infocard-data"><a href="/pokedex/wooper" class="ent-name">Wooper</a><br><small class="aside">#194 / <a href="/type/water" class="itype water">Water</a> &middot; <a href="/type/ground" class="itype ground">Ground</a></small><br><small class="aside"><a href="/mechanics/egg-groups/field">Field</a>, <a href="/mechanics/egg-groups/water-1">Water 1</a></small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n195"></i></span><span class="infocard-data"><a href="/pokedex/quagsire" class="ent-name">Quagsire</a><br><small class="aside">#195 / <a href="/type/water" class="itype water">Water</a> &middot; <a href="/type/ground" class="itype ground">Ground</a></small><br><small class="aside"><a href="/mechanics/egg-groups/field">Field</a>, <a href="/mechanics/egg-groups/water-1">Water 1</a></small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n204"></i></span><span class="infocard-data"><a href="/pokedex/pineco" class="ent-name">Pineco</a><br><small class="aside">#204 / <a href="/type/bug" class="itype bug">Bug</a></small><br><small class="aside"><a href="/mechanics/egg-groups/bug">Bug</a></small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n205"></i></span><span class="infocard-data"><a href="/pokedex/forretress" class="ent-name">Forretress</a><br><small class="aside">#205 / <a href="/type/bug" class="itype bug">Bug</a> &middot; <a href="/type/steel" class="itype steel">Steel</a></small><br><small class="aside"><a href="/mechanics/egg-groups/bug">Bug</a></small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n207"></i></span><span class="infocard-data"><a href="/pokedex/gligar" class="ent-name">Gligar</a><br><small class="aside">#207 / <a href="/type/ground" class="itype ground">Ground</a> &middot; <a href="/type/flying" class="itype flying">Flying</a></small><br><small class="aside"><a href="/mechanics/egg-groups/bug">Bug</a></small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n212"></i></span><span class="infocard-data"><a href="/pokedex/scizor" class="ent-name">Scizor</a><br><small class="aside">#212 / <a href="/type/bug" class="itype bug">Bug</a> &middot; <a href="/type/steel" class="itype steel">Steel</a></small><br><small class="aside"><a href="/mechanics/egg-groups/bug">Bug</a></small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n215"></i></span><span class="infocard-data"><a href="/pokedex/sneasel" class="ent-name">Sneasel</a><br><small class="aside">#215 / <a href="/type/dark" class="itype dark">Dark</a> &middot; <a href="/type/ice" class="itype ice">Ice</a></small><br><small class="aside"><a href="/mechanics/egg-groups/field">Field</a></small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n216"></i></span><span class="infocard-data"><a href="/pokedex/teddiursa" class="ent-name">Teddiursa</a><br><small class="aside">#216 / <a href="/type/normal" class="itype normal">Normal</a></small><br><small class="aside"><a href="/mechanics/egg-groups/field">Field</a></small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n217"></i></span><span class="infocard-data"><a href="/pokedex/ursaring" class="ent-name">Ursaring</a><br><small class="aside">#217 / <a href="/type/normal" class="itype normal">Normal</a></small><br><small class="aside"><a href="/mechanics/egg-groups/field">Field</a></small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n228"></i></span><span class="infocard-data"><a href="/pokedex/houndour" class="ent-name">Houndour</a><br><small class="aside">#228 / <a href="/type/dark" class="itype dark">Dark</a> &middot; <a href="/type/fire" class="itype fire">Fire</a></small><br><small class="aside"><a href="/mechanics/egg-groups/field">Field</a></small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n229"></i></span><span class="infocard-data"><a href="/pokedex/houndoom" class="ent-name">Houndoom</a><br><small class="aside">#229 / <a href="/type/dark" class="itype dark">Dark</a> &middot; <a href="/type/fire" class="itype fire">Fire</a></small><br><small class="aside"><a href="/mechanics/egg-groups/field">Field</a></small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n231"></i></span><span class="infocard-data"><a href="/pokedex/phanpy" class="ent-name">Phanpy</a><br><small class="aside">#231 / <a href="/type/ground" class="itype ground">Ground</a></small><br><small class="aside"><a href="/mechanics/egg-groups/field">Field</a></small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n232"></i></span><span class="infocard-data"><a href="/pokedex/donphan" class="ent-name">Donphan</a><br><small class="aside">#232 / <a href="/type/ground" class="itype ground">Ground</a></small><br><small class="aside"><a href="/mechanics/egg-groups/field">Field</a></small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n236"></i></span><span class="infocard-data"><a href="/pokedex/tyrogue" class="ent-name">Tyrogue</a><br><small class="aside">#236 / <a href="/type/fighting" class="itype fighting">Fighting</a></small><br><small class="aside"><a href="/mechanics/egg-groups/undiscovered">Undiscovered</a></small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n237"></i></span><span class="infocard-data"><a href="/pokedex/hitmontop" class="ent-name">Hitmontop</a><br><small class="aside">#237 / <a href="/type/fighting" class="itype fighting">Fighting</a></small><br><small class="aside"><a href="/mechanics/egg-groups/human-like">Human-Like</a></small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n242"></i></span><span class="infocard-data"><a href="/pokedex/blissey" class="ent-name">Blissey</a><br><small class="aside">#242 / <a href="/type/normal" class="itype normal">Normal</a></small><br><small class="aside"><a href="/mechanics/egg-groups/fairy">Fairy</a></small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n255"></i></span><span class="infocard-data"><a href="/pokedex/torchic" class="ent-name">Torchic</a><br><small class="aside">#255 / <a href="/type/fire" class="itype fire">Fire</a></small><br><small class="aside"><a href="/mechanics/egg-groups/field">Field</a></small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n256"></i></span><span class="infocard-data"><a href="/pokedex/combusken" class="ent-name">Combusken</a><br><small class="aside">#256 / <a href="/type/fire" class="itype fire">Fire</a> &middot; <a href="/type/fighting" class="itype fighting">Fighting</a></small><br><small class="aside"><a href="/mechanics/egg-groups/field">Field</a></small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n257"></i></span><span class="infocard-data"><a href="/pokedex/blaziken" class="ent-name">Blaziken</a><br><small class="aside">#257 / <a href="/type/fire" class="itype fire">Fire</a> &middot; <a href="/type/fighting" class="itype fighting">Fighting</a></small><br><small class="aside"><a href="/mechanics/egg-groups/field">Field</a></small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n258"></i></span><span class="infocard-data"><a href="/pokedex/mudkip" class="ent-name">Mudkip</a><br><small class="aside">#258 / <a href="/type/water" class="itype water">Water</a></small><br><small class="aside"><a href="/mechanics/egg-groups/monster">Monster</a>, <a href="/mechanics/egg-groups/water-1">Water 1</a></small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n259"></i></span><span class="infocard-data"><a href="/pokedex/marshtomp" class="ent-name">Marshtomp</a><br><small class="aside">#259 / <a href="/type/water" class="itype water">Water</a> &middot; <a href="/type/ground" class="itype ground">Ground</a></small><br><small class="aside"><a href="/mechanics/egg-groups/monster">Monster</a>, <a href="/mechanics/egg-groups/water-1">Water 1</a></small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n260"></i></span><span class="infocard-data"><a href="/pokedex/swampert" class="ent-name">Swampert</a><br><small class="aside">#260 / <a href="/type/water" class="itype water">Water</a> &middot; <a href="/type/ground" class="itype ground">Ground</a></small><br><small class="aside"><a href="/mechanics/egg-groups/monster">Monster</a>, <a href="/mechanics/egg-groups/water-1">Water 1</a></small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n270"></i></span><span class="infocard-data"><a href="/pokedex/lotad" class="ent-name">Lotad</a><br><small class="aside">#270 / <a href="/type/water" class="itype water">Water</a> &middot; <a href="/type/grass" class="itype grass">Grass</a></small><br><small class="aside"><a href="/mechanics/egg-groups/grass">Grass</a>, <a href="/mechanics/egg-groups/water-1">Water 1</a></small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n271"></i></span><span class="infocard-data"><a href="/pokedex/lombre" class="ent-name">Lombre</a><br><small class="aside">#271 / <a href="/type/water" class="itype water">Water</a> &middot; <a href="/type/grass" class="itype grass">Grass</a></small><br><small class="aside"><a href="/mechanics/egg-groups/grass">Grass</a>, <a href="/mechanics/egg-groups/water-1">Water 1</a></small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n272"></i></span><span class="infocard-data"><a href="/pokedex/ludicolo" class="ent-name">Ludicolo</a><br><small class="aside">#272 / <a href="/type/water" class="itype water">Water</a> &middot; <a href="/type/grass" class="itype grass">Grass</a></small><br><small class="aside"><a href="/mechanics/egg-groups/grass">Grass</a>, <a href="/mechanics/egg-groups/water-1">Water 1</a></small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n296"></i></span><span class="infocard-data"><a href="/pokedex/makuhita" class="ent-name">Makuhita</a><br><small class="aside">#296 / <a href="/type/fighting" class="itype fighting">Fighting</a></small><br><small class="aside"><a href="/mechanics/egg-groups/human-like">Human-Like</a></small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n297"></i></span><span class="infocard-data"><a href="/pokedex/hariyama" class="ent-name">Hariyama</a><br><small class="aside">#297 / <a href="/type/fighting" class="itype fighting">Fighting</a></small><br><small class="aside"><a href="/mechanics/egg-groups/human-like">Human-Like</a></small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n331"></i></span><span class="infocard-data"><a href="/pokedex/cacnea" class="ent-name">Cacnea</a><br><small class="aside">#331 / <a href="/type/grass" class="itype grass">Grass</a></small><br><small class="aside"><a href="/mechanics/egg-groups/grass">Grass</a>, <a href="/mechanics/egg-groups/human-like">Human-Like</a></small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n332"></i></span><span class="infocard-data"><a href="/pokedex/cacturne" class="ent-name">Cacturne</a><br><small class="aside">#332 / <a href="/type/grass" class="itype grass">Grass</a> &middot; <a href="/type/dark" class="itype dark">Dark</a></small><br><small class="aside"><a href="/mechanics/egg-groups/grass">Grass</a>, <a href="/mechanics/egg-groups/human-like">Human-Like</a></small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n335"></i></span><span class="infocard-data"><a href="/pokedex/zangoose" class="ent-name">Zangoose</a><br><small class="aside">#335 / <a href="/type/normal" class="itype normal">Normal</a></small><br><small class="aside"><a href="/mechanics/egg-groups/field">Field</a></small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n390"></i></span><span class="infocard-data"><a href="/pokedex/chimchar" class="ent-name">Chimchar</a><br><small class="aside">#390 / <a href="/type/fire" class="itype fire">Fire</a></small><br><small class="aside"><a href="/mechanics/egg-groups/field">Field</a>, <a href="/mechanics/egg-groups/human-like">Human-Like</a></small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n391"></i></span><span class="infocard-data"><a href="/pokedex/monferno" class="ent-name">Monferno</a><br><small class="aside">#391 / <a href="/type/fire" class="itype fire">Fire</a> &middot; <a href="/type/fighting" class="itype fighting">Fighting</a></small><br><small class="aside"><a href="/mechanics/egg-groups/field">Field</a>, <a href="/mechanics/egg-groups/human-like">Human-Like</a></small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n392"></i></span><span class="infocard-data"><a href="/pokedex/infernape" class="ent-name">Infernape</a><br><small class="aside">#392 / <a href="/type/fire" class="itype fire">Fire</a> &middot; <a href="/type/fighting" class="itype fighting">Fighting</a></small><br><small class="aside"><a href="/mechanics/egg-groups/field">Field</a>, <a href="/mechanics/egg-groups/human-like">Human-Like</a></small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n410"></i></span><span class="infocard-data"><a href="/pokedex/shieldon" class="ent-name">Shieldon</a><br><small class="aside">#410 / <a href="/type/rock" class="itype rock">Rock</a> &middot; <a href="/type/steel" class="itype steel">Steel</a></small><br><small class="aside"><a href="/mechanics/egg-groups/monster">Monster</a></small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n411"></i></span><span class="infocard-data"><a href="/pokedex/bastiodon" class="ent-name">Bastiodon</a><br><small class="aside">#411 / <a href="/type/rock" class="itype rock">Rock</a> &middot; <a href="/type/steel" class="itype steel">Steel</a></small><br><small class="aside"><a href="/mechanics/egg-groups/monster">Monster</a></small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n422"></i></span><span class="infocard-data"><a href="/pokedex/shellos" class="ent-name">Shellos</a><br><small class="aside">#422 / <a href="/type/water" class="itype water">Water</a></small><br><small class="aside"><a href="/mechanics/egg-groups/amorphous">Amorphous</a>, <a href="/mechanics/egg-groups/water-1">Water 1</a></small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n423"></i></span><span class="infocard-data"><a href="/pokedex/gastrodon" class="ent-name">Gastrodon</a><br><small class="aside">#423 / <a href="/type/water" class="itype water">Water</a> &middot; <a href="/type/ground" class="itype ground">Ground</a></small><br><small class="aside"><a href="/mechanics/egg-groups/amorphous">Amorphous</a>, <a href="/mechanics/egg-groups/water-1">Water 1</a></small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n424"></i></span><span class="infocard-data"><a href="/pokedex/ambipom" class="ent-name">Ambipom</a><br><small class="aside">#424 / <a href="/type/normal" class="itype normal">Normal</a></small><br><small class="aside"><a href="/mechanics/egg-groups/field">Field</a></small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n440"></i></span><span class="infocard-data"><a href="/pokedex/happiny" class="ent-name">Happiny</a><br><small class="aside">#440 / <a href="/type/normal" class="itype normal">Normal</a></small><br><small class="aside"><a href="/mechanics/egg-groups/undiscovered">Undiscovered</a></small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n446"></i></span><span class="infocard-data"><a href="/pokedex/munchlax" class="ent-name">Munchlax</a><br><small class="aside">#446 / <a href="/type/normal" class="itype normal">Normal</a></small><br><small class="aside"><a href="/mechanics/egg-groups/undiscovered">Undiscovered</a></small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n453"></i></span><span class="infocard-data"><a href="/pokedex/croagunk" class="ent-name">Croagunk</a><br><small class="aside">#453 / <a href="/type/poison" class="itype poison">Poison</a> &middot; <a href="/type/fighting" class="itype fighting">Fighting</a></small><br><small class="aside"><a href="/mechanics/egg-groups/human-like">Human-Like</a></small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n454"></i></span><span class="infocard-data"><a href="/pokedex/toxicroak" class="ent-name">Toxicroak</a><br><small class="aside">#454 / <a href="/type/poison" class="itype poison">Poison</a> &middot; <a href="/type/fighting" class="itype fighting">Fighting</a></small><br><small class="aside"><a href="/mechanics/egg-groups/human-like">Human-Like</a></small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n461"></i></span><span class="infocard-data"><a href="/pokedex/weavile" class="ent-name">Weavile</a><br><small class="aside">#461 / <a href="/type/dark" class="itype dark">Dark</a> &middot; <a href="/type/ice" class="itype ice">Ice</a></small><br><small class="aside"><a href="/mechanics/egg-groups/field">Field</a></small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n464"></i></span><span class="infocard-data"><a href="/pokedex/rhyperior" class="ent-name">Rhyperior</a><br><small class="aside">#464 / <a href="/type/ground" class="itype ground">Ground</a> &middot; <a href="/type/rock" class="itype rock">Rock</a></small><br><small class="aside"><a href="/mechanics/egg-groups/field">Field</a>, <a href="/mechanics/egg-groups/monster">Monster</a></small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n472"></i></span><span class="infocard-data"><a href="/pokedex/gliscor" class="ent-name">Gliscor</a><br><small class="aside">#472 / <a href="/type/ground" class="itype ground">Ground</a> &middot; <a href="/type/flying" class="itype flying">Flying</a></small><br><small class="aside"><a href="/mechanics/egg-groups/bug">Bug</a></small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n532"></i></span><span class="infocard-data"><a href="/pokedex/timburr" class="ent-name">Timburr</a><br><small class="aside">#532 / <a href="/type/fighting" class="itype fighting">Fighting</a></small><br><small class="aside"><a href="/mechanics/egg-groups/human-like">Human-Like</a></small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n533"></i></span><span class="infocard-data"><a href="/pokedex/gurdurr" class="ent-name">Gurdurr</a><br><small class="aside">#533 / <a href="/type/fighting" class="itype fighting">Fighting</a></small><br><small class="aside"><a href="/mechanics/egg-groups/human-like">Human-Like</a></small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n534"></i></span><span class="infocard-data"><a href="/pokedex/conkeldurr" class="ent-name">Conkeldurr</a><br><small class="aside">#534 / <a href="/type/fighting" class="itype fighting">Fighting</a></small><br><small class="aside"><a href="/mechanics/egg-groups/human-like">Human-Like</a></small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n551"></i></span><span class="infocard-data"><a href="/pokedex/sandile" class="ent-name">Sandile</a><br><small class="aside">#551 / <a href="/type/ground" class="itype ground">Ground</a> &middot; <a href="/type/dark" class="itype dark">Dark</a></small><br><small class="aside"><a href="/mechanics/egg-groups/field">Field</a></small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n552"></i></span><span class="infocard-data"><a href="/pokedex/krokorok" class="ent-name">Krokorok</a><br><small class="aside">#552 / <a href="/type/ground" class="itype ground">Ground</a> &middot; <a href="/type/dark" class="itype dark">Dark</a></small><br><small class="aside"><a href="/mechanics/egg-groups/field">Field</a></small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n553"></i></span><span class="infocard-data"><a href="/pokedex/krookodile" class="ent-name">Krookodile</a><br><small class="aside">#553 / <a href="/type/ground" class="itype ground">Ground</a> &middot; <a href="/type/dark" class="itype dark">Dark</a></small><br><small class="aside"><a href="/mechanics/egg-groups/field">Field</a></small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n557"></i></span><span class="infocard-data"><a href="/pokedex/dwebble" class="ent-name">Dwebble</a><br><small class="aside">#557 / <a href="/type/bug" class="itype bug">Bug</a> &middot; <a href="/type/rock" class="itype rock">Rock</a></small><br><small class="aside"><a href="/mechanics/egg-groups/bug">Bug</a>, <a href="/mechanics/egg-groups/mineral">Mineral</a></small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n558"></i></span><span class="infocard-data"><a href="/pokedex/crustle" class="ent-name">Crustle</a><br><small class="aside">#558 / <a href="/type/bug" class="itype bug">Bug</a> &middot; <a href="/type/rock" class="itype rock">Rock</a></small><br><small class="aside"><a href="/mechanics/egg-groups/bug">Bug</a>, <a href="/mechanics/egg-groups/mineral">Mineral</a></small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n559"></i></span><span class="infocard-data"><a href="/pokedex/scraggy" class="ent-name">Scraggy</a><br><small class="aside">#559 / <a href="/type/dark" class="itype dark">Dark</a> &middot; <a href="/type/fighting" class="itype fighting">Fighting</a></small><br><small class="aside"><a href="/mechanics/egg-groups/dragon">Dragon</a>, <a href="/mechanics/egg-groups/field">Field</a></small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n560"></i></span><span class="infocard-data"><a href="/pokedex/scrafty" class="ent-name">Scrafty</a><br><small class="aside">#560 / <a href="/type/dark" class="itype dark">Dark</a> &middot; <a href="/type/fighting" class="itype fighting">Fighting</a></small><br><small class="aside"><a href="/mechanics/egg-groups/dragon">Dragon</a>, <a href="/mechanics/egg-groups/field">Field</a></small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n570"></i></span><span class="infocard-data"><a href="/pokedex/zorua" class="ent-name">Zorua</a><br><small class="aside">#570 / <a href="/type/dark" class="itype dark">Dark</a></small><br><small class="aside"><a href="/mechanics/egg-groups/field">Field</a></small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n571"></i></span><span class="infocard-data"><a href="/pokedex/zoroark" class="ent-name">Zoroark</a><br><small class="aside">#571 / <a href="/type/dark" class="itype dark">Dark</a></small><br><small class="aside"><a href="/mechanics/egg-groups/field">Field</a></small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n588"></i></span><span class="infocard-data"><a href="/pokedex/karrablast" class="ent-name">Karrablast</a><br><small class="aside">#588 / <a href="/type/bug" class="itype bug">Bug</a></small><br><small class="aside"><a href="/mechanics/egg-groups/bug">Bug</a></small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n589"></i></span><span class="infocard-data"><a href="/pokedex/escavalier" class="ent-name">Escavalier</a><br><small class="aside">#589 / <a href="/type/bug" class="itype bug">Bug</a> &middot; <a href="/type/steel" class="itype steel">Steel</a></small><br><small class="aside"><a href="/mechanics/egg-groups/bug">Bug</a></small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n610"></i></span><span class="infocard-data"><a href="/pokedex/axew" class="ent-name">Axew</a><br><small class="aside">#610 / <a href="/type/dragon" class="itype dragon">Dragon</a></small><br><small class="aside"><a href="/mechanics/egg-groups/dragon">Dragon</a>, <a href="/mechanics/egg-groups/monster">Monster</a></small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n611"></i></span><span class="infocard-data"><a href="/pokedex/fraxure" class="ent-name">Fraxure</a><br><small class="aside">#611 / <a href="/type/dragon" class="itype dragon">Dragon</a></small><br><small class="aside"><a href="/mechanics/egg-groups/dragon">Dragon</a>, <a href="/mechanics/egg-groups/monster">Monster</a></small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n612"></i></span><span class="infocard-data"><a href="/pokedex/haxorus" class="ent-name">Haxorus</a><br><small class="aside">#612 / <a href="/type/dragon" class="itype dragon">Dragon</a></small><br><small class="aside"><a href="/mechanics/egg-groups/dragon">Dragon</a>, <a href="/mechanics/egg-groups/monster">Monster</a></small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n704"></i></span><span class="infocard-data"><a href="/pokedex/goomy" class="ent-name">Goomy</a><br><small class="aside">#704 / <a href="/type/dragon" class="itype dragon">Dragon</a></small><br><small class="aside"><a href="/mechanics/egg-groups/dragon">Dragon</a></small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n705"></i></span><span class="infocard-data"><a href="/pokedex/sliggoo" class="ent-name">Sliggoo</a><br><small class="aside">#705 / <a href="/type/dragon" class="itype dragon">Dragon</a></small><br><small class="aside"><a href="/mechanics/egg-groups/dragon">Dragon</a></small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n706"></i></span><span class="infocard-data"><a href="/pokedex/goodra" class="ent-name">Goodra</a><br><small class="aside">#706 / <a href="/type/dragon" class="itype dragon">Dragon</a></small><br><small class="aside"><a href="/mechanics/egg-groups/dragon">Dragon</a></small></span></span>
+</div>
+
+
+	<h2 id="move-oldgen">Learnt in previous generations only</h2>
+	<p>These PokÃ©mon can only learn <em>Counter</em> in previous games; check the respective PokÃ©dex pages for full details.</p>
+
+	<div class="infocard-list"><span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n7"></i></span><span class="infocard-data"><a href="/pokedex/squirtle" class="ent-name">Squirtle</a><br><small class="aside">#007 / <a href="/type/water" class="itype water">Water</a></small><br><small class="aside">Gen 3 &mdash; Move tutor</small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n8"></i></span><span class="infocard-data"><a href="/pokedex/wartortle" class="ent-name">Wartortle</a><br><small class="aside">#008 / <a href="/type/water" class="itype water">Water</a></small><br><small class="aside">Gen 3 &mdash; Move tutor</small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n9"></i></span><span class="infocard-data"><a href="/pokedex/blastoise" class="ent-name">Blastoise</a><br><small class="aside">#009 / <a href="/type/water" class="itype water">Water</a></small><br><small class="aside">Gen 3 &mdash; Move tutor</small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n25"></i></span><span class="infocard-data"><a href="/pokedex/pikachu" class="ent-name">Pikachu</a><br><small class="aside">#025 / <a href="/type/electric" class="itype electric">Electric</a></small><br><small class="aside">Gen 3 &mdash; Move tutor</small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n26"></i></span><span class="infocard-data"><a href="/pokedex/raichu" class="ent-name">Raichu</a><br><small class="aside">#026 / <a href="/type/electric" class="itype electric">Electric</a></small><br><small class="aside">Gen 3 &mdash; Move tutor</small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n35"></i></span><span class="infocard-data"><a href="/pokedex/clefairy" class="ent-name">Clefairy</a><br><small class="aside">#035 / <a href="/type/fairy" class="itype fairy">Fairy</a></small><br><small class="aside">Gen 3 &mdash; Move tutor</small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n36"></i></span><span class="infocard-data"><a href="/pokedex/clefable" class="ent-name">Clefable</a><br><small class="aside">#036 / <a href="/type/fairy" class="itype fairy">Fairy</a></small><br><small class="aside">Gen 3 &mdash; Move tutor</small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n39"></i></span><span class="infocard-data"><a href="/pokedex/jigglypuff" class="ent-name">Jigglypuff</a><br><small class="aside">#039 / <a href="/type/normal" class="itype normal">Normal</a> &middot; <a href="/type/fairy" class="itype fairy">Fairy</a></small><br><small class="aside">Gen 3 &mdash; Move tutor</small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n40"></i></span><span class="infocard-data"><a href="/pokedex/wigglytuff" class="ent-name">Wigglytuff</a><br><small class="aside">#040 / <a href="/type/normal" class="itype normal">Normal</a> &middot; <a href="/type/fairy" class="itype fairy">Fairy</a></small><br><small class="aside">Gen 3 &mdash; Move tutor</small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n54"></i></span><span class="infocard-data"><a href="/pokedex/psyduck" class="ent-name">Psyduck</a><br><small class="aside">#054 / <a href="/type/water" class="itype water">Water</a></small><br><small class="aside">Gen 3 &mdash; Move tutor</small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n55"></i></span><span class="infocard-data"><a href="/pokedex/golduck" class="ent-name">Golduck</a><br><small class="aside">#055 / <a href="/type/water" class="itype water">Water</a></small><br><small class="aside">Gen 3 &mdash; Move tutor</small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n61"></i></span><span class="infocard-data"><a href="/pokedex/poliwhirl" class="ent-name">Poliwhirl</a><br><small class="aside">#061 / <a href="/type/water" class="itype water">Water</a></small><br><small class="aside">Gen 3 &mdash; Move tutor</small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n62"></i></span><span class="infocard-data"><a href="/pokedex/poliwrath" class="ent-name">Poliwrath</a><br><small class="aside">#062 / <a href="/type/water" class="itype water">Water</a> &middot; <a href="/type/fighting" class="itype fighting">Fighting</a></small><br><small class="aside">Gen 3 &mdash; Move tutor</small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n63"></i></span><span class="infocard-data"><a href="/pokedex/abra" class="ent-name">Abra</a><br><small class="aside">#063 / <a href="/type/psychic" class="itype psychic">Psychic</a></small><br><small class="aside">Gen 3 &mdash; Move tutor</small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n64"></i></span><span class="infocard-data"><a href="/pokedex/kadabra" class="ent-name">Kadabra</a><br><small class="aside">#064 / <a href="/type/psychic" class="itype psychic">Psychic</a></small><br><small class="aside">Gen 3 &mdash; Move tutor</small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n65"></i></span><span class="infocard-data"><a href="/pokedex/alakazam" class="ent-name">Alakazam</a><br><small class="aside">#065 / <a href="/type/psychic" class="itype psychic">Psychic</a></small><br><small class="aside">Gen 3 &mdash; Move tutor</small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n74"></i></span><span class="infocard-data"><a href="/pokedex/geodude" class="ent-name">Geodude</a><br><small class="aside">#074 / <a href="/type/rock" class="itype rock">Rock</a> &middot; <a href="/type/ground" class="itype ground">Ground</a></small><br><small class="aside">Gen 3 &mdash; Move tutor</small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n75"></i></span><span class="infocard-data"><a href="/pokedex/graveler" class="ent-name">Graveler</a><br><small class="aside">#075 / <a href="/type/rock" class="itype rock">Rock</a> &middot; <a href="/type/ground" class="itype ground">Ground</a></small><br><small class="aside">Gen 3 &mdash; Move tutor</small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n76"></i></span><span class="infocard-data"><a href="/pokedex/golem" class="ent-name">Golem</a><br><small class="aside">#076 / <a href="/type/rock" class="itype rock">Rock</a> &middot; <a href="/type/ground" class="itype ground">Ground</a></small><br><small class="aside">Gen 3 &mdash; Move tutor</small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n80"></i></span><span class="infocard-data"><a href="/pokedex/slowbro" class="ent-name">Slowbro</a><br><small class="aside">#080 / <a href="/type/water" class="itype water">Water</a> &middot; <a href="/type/psychic" class="itype psychic">Psychic</a></small><br><small class="aside">Gen 3 &mdash; Move tutor</small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n94"></i></span><span class="infocard-data"><a href="/pokedex/gengar" class="ent-name">Gengar</a><br><small class="aside">#094 / <a href="/type/ghost" class="itype ghost">Ghost</a> &middot; <a href="/type/poison" class="itype poison">Poison</a></small><br><small class="aside">Gen 3 &mdash; Move tutor</small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n96"></i></span><span class="infocard-data"><a href="/pokedex/drowzee" class="ent-name">Drowzee</a><br><small class="aside">#096 / <a href="/type/psychic" class="itype psychic">Psychic</a></small><br><small class="aside">Gen 3 &mdash; Move tutor</small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n97"></i></span><span class="infocard-data"><a href="/pokedex/hypno" class="ent-name">Hypno</a><br><small class="aside">#097 / <a href="/type/psychic" class="itype psychic">Psychic</a></small><br><small class="aside">Gen 3 &mdash; Move tutor</small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n104"></i></span><span class="infocard-data"><a href="/pokedex/cubone" class="ent-name">Cubone</a><br><small class="aside">#104 / <a href="/type/ground" class="itype ground">Ground</a></small><br><small class="aside">Gen 3 &mdash; Move tutor</small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n105"></i></span><span class="infocard-data"><a href="/pokedex/marowak" class="ent-name">Marowak</a><br><small class="aside">#105 / <a href="/type/ground" class="itype ground">Ground</a></small><br><small class="aside">Gen 3 &mdash; Move tutor</small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n108"></i></span><span class="infocard-data"><a href="/pokedex/lickitung" class="ent-name">Lickitung</a><br><small class="aside">#108 / <a href="/type/normal" class="itype normal">Normal</a></small><br><small class="aside">Gen 3 &mdash; Move tutor</small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n122"></i></span><span class="infocard-data"><a href="/pokedex/mr-mime" class="ent-name">Mr. Mime</a><br><small class="aside">#122 / <a href="/type/psychic" class="itype psychic">Psychic</a> &middot; <a href="/type/fairy" class="itype fairy">Fairy</a></small><br><small class="aside">Gen 3 &mdash; Move tutor</small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n124"></i></span><span class="infocard-data"><a href="/pokedex/jynx" class="ent-name">Jynx</a><br><small class="aside">#124 / <a href="/type/ice" class="itype ice">Ice</a> &middot; <a href="/type/psychic" class="itype psychic">Psychic</a></small><br><small class="aside">Gen 3 &mdash; Move tutor</small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n125"></i></span><span class="infocard-data"><a href="/pokedex/electabuzz" class="ent-name">Electabuzz</a><br><small class="aside">#125 / <a href="/type/electric" class="itype electric">Electric</a></small><br><small class="aside">Gen 3 &mdash; Move tutor</small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n126"></i></span><span class="infocard-data"><a href="/pokedex/magmar" class="ent-name">Magmar</a><br><small class="aside">#126 / <a href="/type/fire" class="itype fire">Fire</a></small><br><small class="aside">Gen 3 &mdash; Move tutor</small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n150"></i></span><span class="infocard-data"><a href="/pokedex/mewtwo" class="ent-name">Mewtwo</a><br><small class="aside">#150 / <a href="/type/psychic" class="itype psychic">Psychic</a></small><br><small class="aside">Gen 3 &mdash; Move tutor</small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n151"></i></span><span class="infocard-data"><a href="/pokedex/mew" class="ent-name">Mew</a><br><small class="aside">#151 / <a href="/type/psychic" class="itype psychic">Psychic</a></small><br><small class="aside">Gen 3 &mdash; Move tutor</small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n157"></i></span><span class="infocard-data"><a href="/pokedex/typhlosion" class="ent-name">Typhlosion</a><br><small class="aside">#157 / <a href="/type/fire" class="itype fire">Fire</a></small><br><small class="aside">Gen 3 &mdash; Move tutor</small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n158"></i></span><span class="infocard-data"><a href="/pokedex/totodile" class="ent-name">Totodile</a><br><small class="aside">#158 / <a href="/type/water" class="itype water">Water</a></small><br><small class="aside">Gen 3 &mdash; Move tutor</small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n159"></i></span><span class="infocard-data"><a href="/pokedex/croconaw" class="ent-name">Croconaw</a><br><small class="aside">#159 / <a href="/type/water" class="itype water">Water</a></small><br><small class="aside">Gen 3 &mdash; Move tutor</small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n160"></i></span><span class="infocard-data"><a href="/pokedex/feraligatr" class="ent-name">Feraligatr</a><br><small class="aside">#160 / <a href="/type/water" class="itype water">Water</a></small><br><small class="aside">Gen 3 &mdash; Move tutor</small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n172"></i></span><span class="infocard-data"><a href="/pokedex/pichu" class="ent-name">Pichu</a><br><small class="aside">#172 / <a href="/type/electric" class="itype electric">Electric</a></small><br><small class="aside">Gen 3 &mdash; Move tutor</small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n173"></i></span><span class="infocard-data"><a href="/pokedex/cleffa" class="ent-name">Cleffa</a><br><small class="aside">#173 / <a href="/type/fairy" class="itype fairy">Fairy</a></small><br><small class="aside">Gen 3 &mdash; Move tutor</small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n174"></i></span><span class="infocard-data"><a href="/pokedex/igglybuff" class="ent-name">Igglybuff</a><br><small class="aside">#174 / <a href="/type/normal" class="itype normal">Normal</a> &middot; <a href="/type/fairy" class="itype fairy">Fairy</a></small><br><small class="aside">Gen 3 &mdash; Move tutor</small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n175"></i></span><span class="infocard-data"><a href="/pokedex/togepi" class="ent-name">Togepi</a><br><small class="aside">#175 / <a href="/type/fairy" class="itype fairy">Fairy</a></small><br><small class="aside">Gen 3 &mdash; Move tutor</small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n176"></i></span><span class="infocard-data"><a href="/pokedex/togetic" class="ent-name">Togetic</a><br><small class="aside">#176 / <a href="/type/fairy" class="itype fairy">Fairy</a> &middot; <a href="/type/flying" class="itype flying">Flying</a></small><br><small class="aside">Gen 3 &mdash; Move tutor</small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n180"></i></span><span class="infocard-data"><a href="/pokedex/flaaffy" class="ent-name">Flaaffy</a><br><small class="aside">#180 / <a href="/type/electric" class="itype electric">Electric</a></small><br><small class="aside">Gen 3 &mdash; Move tutor</small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n181"></i></span><span class="infocard-data"><a href="/pokedex/ampharos" class="ent-name">Ampharos</a><br><small class="aside">#181 / <a href="/type/electric" class="itype electric">Electric</a></small><br><small class="aside">Gen 3 &mdash; Move tutor</small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n186"></i></span><span class="infocard-data"><a href="/pokedex/politoed" class="ent-name">Politoed</a><br><small class="aside">#186 / <a href="/type/water" class="itype water">Water</a></small><br><small class="aside">Gen 3 &mdash; Move tutor</small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n199"></i></span><span class="infocard-data"><a href="/pokedex/slowking" class="ent-name">Slowking</a><br><small class="aside">#199 / <a href="/type/water" class="itype water">Water</a> &middot; <a href="/type/psychic" class="itype psychic">Psychic</a></small><br><small class="aside">Gen 3 &mdash; Move tutor</small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n206"></i></span><span class="infocard-data"><a href="/pokedex/dunsparce" class="ent-name">Dunsparce</a><br><small class="aside">#206 / <a href="/type/normal" class="itype normal">Normal</a></small><br><small class="aside">Gen 3 &mdash; Move tutor</small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n209"></i></span><span class="infocard-data"><a href="/pokedex/snubbull" class="ent-name">Snubbull</a><br><small class="aside">#209 / <a href="/type/fairy" class="itype fairy">Fairy</a></small><br><small class="aside">Gen 3 &mdash; Move tutor</small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n210"></i></span><span class="infocard-data"><a href="/pokedex/granbull" class="ent-name">Granbull</a><br><small class="aside">#210 / <a href="/type/fairy" class="itype fairy">Fairy</a></small><br><small class="aside">Gen 3 &mdash; Move tutor</small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n225"></i></span><span class="infocard-data"><a href="/pokedex/delibird" class="ent-name">Delibird</a><br><small class="aside">#225 / <a href="/type/ice" class="itype ice">Ice</a> &middot; <a href="/type/flying" class="itype flying">Flying</a></small><br><small class="aside">Gen 3 &mdash; Move tutor</small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n227"></i></span><span class="infocard-data"><a href="/pokedex/skarmory" class="ent-name">Skarmory</a><br><small class="aside">#227 / <a href="/type/steel" class="itype steel">Steel</a> &middot; <a href="/type/flying" class="itype flying">Flying</a></small><br><small class="aside">Gen 3 &mdash; Move tutor</small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n238"></i></span><span class="infocard-data"><a href="/pokedex/smoochum" class="ent-name">Smoochum</a><br><small class="aside">#238 / <a href="/type/ice" class="itype ice">Ice</a> &middot; <a href="/type/psychic" class="itype psychic">Psychic</a></small><br><small class="aside">Gen 3 &mdash; Move tutor</small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n239"></i></span><span class="infocard-data"><a href="/pokedex/elekid" class="ent-name">Elekid</a><br><small class="aside">#239 / <a href="/type/electric" class="itype electric">Electric</a></small><br><small class="aside">Gen 3 &mdash; Move tutor</small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n240"></i></span><span class="infocard-data"><a href="/pokedex/magby" class="ent-name">Magby</a><br><small class="aside">#240 / <a href="/type/fire" class="itype fire">Fire</a></small><br><small class="aside">Gen 3 &mdash; Move tutor</small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n241"></i></span><span class="infocard-data"><a href="/pokedex/miltank" class="ent-name">Miltank</a><br><small class="aside">#241 / <a href="/type/normal" class="itype normal">Normal</a></small><br><small class="aside">Gen 3 &mdash; Move tutor</small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n248"></i></span><span class="infocard-data"><a href="/pokedex/tyranitar" class="ent-name">Tyranitar</a><br><small class="aside">#248 / <a href="/type/rock" class="itype rock">Rock</a> &middot; <a href="/type/dark" class="itype dark">Dark</a></small><br><small class="aside">Gen 3 &mdash; Move tutor</small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n252"></i></span><span class="infocard-data"><a href="/pokedex/treecko" class="ent-name">Treecko</a><br><small class="aside">#252 / <a href="/type/grass" class="itype grass">Grass</a></small><br><small class="aside">Gen 3 &mdash; Move tutor</small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n253"></i></span><span class="infocard-data"><a href="/pokedex/grovyle" class="ent-name">Grovyle</a><br><small class="aside">#253 / <a href="/type/grass" class="itype grass">Grass</a></small><br><small class="aside">Gen 3 &mdash; Move tutor</small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n254"></i></span><span class="infocard-data"><a href="/pokedex/sceptile" class="ent-name">Sceptile</a><br><small class="aside">#254 / <a href="/type/grass" class="itype grass">Grass</a></small><br><small class="aside">Gen 3 &mdash; Move tutor</small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n261"></i></span><span class="infocard-data"><a href="/pokedex/poochyena" class="ent-name">Poochyena</a><br><small class="aside">#261 / <a href="/type/dark" class="itype dark">Dark</a></small><br><small class="aside">Gen 3 &mdash; Move tutor</small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n262"></i></span><span class="infocard-data"><a href="/pokedex/mightyena" class="ent-name">Mightyena</a><br><small class="aside">#262 / <a href="/type/dark" class="itype dark">Dark</a></small><br><small class="aside">Gen 3 &mdash; Move tutor</small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n276"></i></span><span class="infocard-data"><a href="/pokedex/taillow" class="ent-name">Taillow</a><br><small class="aside">#276 / <a href="/type/normal" class="itype normal">Normal</a> &middot; <a href="/type/flying" class="itype flying">Flying</a></small><br><small class="aside">Gen 3 &mdash; Move tutor</small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n277"></i></span><span class="infocard-data"><a href="/pokedex/swellow" class="ent-name">Swellow</a><br><small class="aside">#277 / <a href="/type/normal" class="itype normal">Normal</a> &middot; <a href="/type/flying" class="itype flying">Flying</a></small><br><small class="aside">Gen 3 &mdash; Move tutor</small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n293"></i></span><span class="infocard-data"><a href="/pokedex/whismur" class="ent-name">Whismur</a><br><small class="aside">#293 / <a href="/type/normal" class="itype normal">Normal</a></small><br><small class="aside">Gen 3 &mdash; Move tutor</small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n294"></i></span><span class="infocard-data"><a href="/pokedex/loudred" class="ent-name">Loudred</a><br><small class="aside">#294 / <a href="/type/normal" class="itype normal">Normal</a></small><br><small class="aside">Gen 3 &mdash; Move tutor</small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n295"></i></span><span class="infocard-data"><a href="/pokedex/exploud" class="ent-name">Exploud</a><br><small class="aside">#295 / <a href="/type/normal" class="itype normal">Normal</a></small><br><small class="aside">Gen 3 &mdash; Move tutor</small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n302"></i></span><span class="infocard-data"><a href="/pokedex/sableye" class="ent-name">Sableye</a><br><small class="aside">#302 / <a href="/type/dark" class="itype dark">Dark</a> &middot; <a href="/type/ghost" class="itype ghost">Ghost</a></small><br><small class="aside">Gen 3 &mdash; Move tutor</small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n303"></i></span><span class="infocard-data"><a href="/pokedex/mawile" class="ent-name">Mawile</a><br><small class="aside">#303 / <a href="/type/steel" class="itype steel">Steel</a> &middot; <a href="/type/fairy" class="itype fairy">Fairy</a></small><br><small class="aside">Gen 3 &mdash; Move tutor</small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n306"></i></span><span class="infocard-data"><a href="/pokedex/aggron" class="ent-name">Aggron</a><br><small class="aside">#306 / <a href="/type/steel" class="itype steel">Steel</a> &middot; <a href="/type/rock" class="itype rock">Rock</a></small><br><small class="aside">Gen 3 &mdash; Move tutor</small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n311"></i></span><span class="infocard-data"><a href="/pokedex/plusle" class="ent-name">Plusle</a><br><small class="aside">#311 / <a href="/type/electric" class="itype electric">Electric</a></small><br><small class="aside">Gen 3 &mdash; Move tutor</small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n312"></i></span><span class="infocard-data"><a href="/pokedex/minun" class="ent-name">Minun</a><br><small class="aside">#312 / <a href="/type/electric" class="itype electric">Electric</a></small><br><small class="aside">Gen 3 &mdash; Move tutor</small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n313"></i></span><span class="infocard-data"><a href="/pokedex/volbeat" class="ent-name">Volbeat</a><br><small class="aside">#313 / <a href="/type/bug" class="itype bug">Bug</a></small><br><small class="aside">Gen 3 &mdash; Move tutor</small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n314"></i></span><span class="infocard-data"><a href="/pokedex/illumise" class="ent-name">Illumise</a><br><small class="aside">#314 / <a href="/type/bug" class="itype bug">Bug</a></small><br><small class="aside">Gen 3 &mdash; Move tutor</small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n316"></i></span><span class="infocard-data"><a href="/pokedex/gulpin" class="ent-name">Gulpin</a><br><small class="aside">#316 / <a href="/type/poison" class="itype poison">Poison</a></small><br><small class="aside">Gen 3 &mdash; Move tutor</small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n317"></i></span><span class="infocard-data"><a href="/pokedex/swalot" class="ent-name">Swalot</a><br><small class="aside">#317 / <a href="/type/poison" class="itype poison">Poison</a></small><br><small class="aside">Gen 3 &mdash; Move tutor</small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n326"></i></span><span class="infocard-data"><a href="/pokedex/grumpig" class="ent-name">Grumpig</a><br><small class="aside">#326 / <a href="/type/psychic" class="itype psychic">Psychic</a></small><br><small class="aside">Gen 3 &mdash; Move tutor</small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n327"></i></span><span class="infocard-data"><a href="/pokedex/spinda" class="ent-name">Spinda</a><br><small class="aside">#327 / <a href="/type/normal" class="itype normal">Normal</a></small><br><small class="aside">Gen 3 &mdash; Move tutor</small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n341"></i></span><span class="infocard-data"><a href="/pokedex/corphish" class="ent-name">Corphish</a><br><small class="aside">#341 / <a href="/type/water" class="itype water">Water</a></small><br><small class="aside">Gen 3 &mdash; Move tutor</small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n342"></i></span><span class="infocard-data"><a href="/pokedex/crawdaunt" class="ent-name">Crawdaunt</a><br><small class="aside">#342 / <a href="/type/water" class="itype water">Water</a> &middot; <a href="/type/dark" class="itype dark">Dark</a></small><br><small class="aside">Gen 3 &mdash; Move tutor</small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n352"></i></span><span class="infocard-data"><a href="/pokedex/kecleon" class="ent-name">Kecleon</a><br><small class="aside">#352 / <a href="/type/normal" class="itype normal">Normal</a></small><br><small class="aside">Gen 3 &mdash; Move tutor</small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n356"></i></span><span class="infocard-data"><a href="/pokedex/dusclops" class="ent-name">Dusclops</a><br><small class="aside">#356 / <a href="/type/ghost" class="itype ghost">Ghost</a></small><br><small class="aside">Gen 3 &mdash; Move tutor</small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n359"></i></span><span class="infocard-data"><a href="/pokedex/absol" class="ent-name">Absol</a><br><small class="aside">#359 / <a href="/type/dark" class="itype dark">Dark</a></small><br><small class="aside">Gen 3 &mdash; Move tutor</small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n377"></i></span><span class="infocard-data"><a href="/pokedex/regirock" class="ent-name">Regirock</a><br><small class="aside">#377 / <a href="/type/rock" class="itype rock">Rock</a></small><br><small class="aside">Gen 3 &mdash; Move tutor</small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n378"></i></span><span class="infocard-data"><a href="/pokedex/regice" class="ent-name">Regice</a><br><small class="aside">#378 / <a href="/type/ice" class="itype ice">Ice</a></small><br><small class="aside">Gen 3 &mdash; Move tutor</small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n379"></i></span><span class="infocard-data"><a href="/pokedex/registeel" class="ent-name">Registeel</a><br><small class="aside">#379 / <a href="/type/steel" class="itype steel">Steel</a></small><br><small class="aside">Gen 3 &mdash; Move tutor</small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n383"></i></span><span class="infocard-data"><a href="/pokedex/groudon" class="ent-name">Groudon</a><br><small class="aside">#383 / <a href="/type/ground" class="itype ground">Ground</a></small><br><small class="aside">Gen 3 &mdash; Move tutor</small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n386-attack"></i></span><span class="infocard-data"><a href="/pokedex/deoxys" class="ent-name">Deoxys</a><br><small class="aside">Attack Forme</small><br><small class="aside">#386 / <a href="/type/psychic" class="itype psychic">Psychic</a></small><br><small class="aside">Gen 3 &mdash; Move tutor</small></span></span>
+<span class="infocard"><span class="infocard-img"><i class="pki" data-sprite="pkiAll n386-speed"></i></span><span class="infocard-data"><a href="/pokedex/deoxys" class="ent-name">Deoxys</a><br><small class="aside">Speed Forme</small><br><small class="aside">#386 / <a href="/type/psychic" class="itype psychic">Psychic</a></small><br><small class="aside">Gen 3 &mdash; Move tutor</small></span></span>
+</div>
+
+<div class="ad-responsive">
+	<style>
+  .adresp-footer { width: 320px; height: 50px; margin-left: -5px; }
+  @media(min-width: 795px) { .adresp-footer { width: 728px; height: 90px; } }
+</style>
+<!-- Pokemon [responsive] - footer -->
+<ins class="adsbygoogle adresp-footer"
+  style="display:inline-block"
+  data-ad-client="ca-pub-4942990752504243"
+  data-ad-slot="9080564600"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+</article>
+
+<footer class="grid-wrapper">
+	<span class="footer-links"><a href="/about#privacy">Privacy Policy</a></span>
+	<span class="footer-copyright">
+		All content &amp; design &copy; PokÃ©mon Database, 2008-2015.
+		PokÃ©mon images &amp; names Â© 1995-2015 Nintendo/Game Freak.
+	</span>
+</footer>
+
+<!--[if lt IE 9]>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<![endif]-->
+<!--[if gte IE 9]><!-->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<!--<![endif]-->
+<script>window.jQuery || document.write('<script src="/static/js/dev/jquery-1.10.1.min.js"><\/script>')</script>
+
+<script src="/static/js/base.35.js"></script>
+
+
+</body>
+</html>

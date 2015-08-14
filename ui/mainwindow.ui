@@ -1,0 +1,1835 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Colosseo</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>521</width>
+      <height>501</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="pokemon1">
+     <attribute name="title">
+      <string>Pokemon 1</string>
+     </attribute>
+     <layout class="QGridLayout" name="gridLayout_64">
+      <item row="0" column="0">
+       <widget class="QGroupBox" name="groupBox_2">
+        <property name="title">
+         <string>Pokemon</string>
+        </property>
+        <widget class="QComboBox" name="speciesBox">
+         <property name="geometry">
+          <rect>
+           <x>84</x>
+           <y>46</y>
+           <width>78</width>
+           <height>24</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_7">
+         <property name="geometry">
+          <rect>
+           <x>17</x>
+           <y>46</y>
+           <width>43</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Species</string>
+         </property>
+        </widget>
+        <widget class="QComboBox" name="abilityBox">
+         <property name="geometry">
+          <rect>
+           <x>84</x>
+           <y>76</y>
+           <width>78</width>
+           <height>24</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_8">
+         <property name="geometry">
+          <rect>
+           <x>17</x>
+           <y>76</y>
+           <width>35</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Ability</string>
+         </property>
+        </widget>
+        <widget class="QComboBox" name="natureBox">
+         <property name="geometry">
+          <rect>
+           <x>84</x>
+           <y>106</y>
+           <width>78</width>
+           <height>24</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_9">
+         <property name="geometry">
+          <rect>
+           <x>17</x>
+           <y>106</y>
+           <width>38</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Nature</string>
+         </property>
+        </widget>
+       </widget>
+      </item>
+      <item row="0" column="1" rowspan="2">
+       <widget class="QGroupBox" name="groupBox_5">
+        <property name="title">
+         <string>IV Points</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_9">
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_10">
+           <property name="text">
+            <string>HP</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QSpinBox" name="ivHPBox">
+           <property name="maximum">
+            <number>32</number>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_23">
+           <property name="text">
+            <string>ATK</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="QLabel" name="label_21">
+           <property name="text">
+            <string>DEF</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="0">
+          <widget class="QLabel" name="label_24">
+           <property name="text">
+            <string>Sp.ATK</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="0">
+          <widget class="QLabel" name="label_26">
+           <property name="text">
+            <string>Sp.DEF</string>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="0">
+          <widget class="QLabel" name="label_25">
+           <property name="text">
+            <string>Speed</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QSpinBox" name="ivATKBox">
+           <property name="maximum">
+            <number>32</number>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="1">
+          <widget class="QSpinBox" name="ivDEFBox">
+           <property name="maximum">
+            <number>32</number>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="1">
+          <widget class="QSpinBox" name="ivSpATKBox">
+           <property name="maximum">
+            <number>32</number>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="1">
+          <widget class="QSpinBox" name="ivSpDEFBox">
+           <property name="maximum">
+            <number>32</number>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="1">
+          <widget class="QSpinBox" name="ivSpeedBox">
+           <property name="maximum">
+            <number>32</number>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QGroupBox" name="groupBox">
+        <property name="title">
+         <string>Moves</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_3">
+         <item row="0" column="0">
+          <widget class="QComboBox" name="move1Box">
+           <property name="currentText">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QComboBox" name="move3Box"/>
+         </item>
+         <item row="1" column="0">
+          <widget class="QComboBox" name="move2Box"/>
+         </item>
+         <item row="1" column="1">
+          <widget class="QComboBox" name="move4Box"/>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QGroupBox" name="evGroup">
+        <property name="whatsThis">
+         <string extracomment="Set EV points "/>
+        </property>
+        <property name="title">
+         <string>EV Points</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_2">
+         <item row="0" column="0">
+          <layout class="QGridLayout" name="gridLayout">
+           <item row="0" column="1">
+            <widget class="QSpinBox" name="evHPBox">
+             <property name="maximum">
+              <number>255</number>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="2">
+            <widget class="QLabel" name="label_4">
+             <property name="text">
+              <string>SpATK</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="3">
+            <widget class="QSpinBox" name="evSpATKBox">
+             <property name="maximum">
+              <number>255</number>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="label_2">
+             <property name="text">
+              <string>ATK</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QSpinBox" name="evATKBox">
+             <property name="maximum">
+              <number>255</number>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="2">
+            <widget class="QLabel" name="label_5">
+             <property name="text">
+              <string>SpDEF</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="3">
+            <widget class="QSpinBox" name="evSpDEFBox">
+             <property name="maximum">
+              <number>255</number>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QLabel" name="label_3">
+             <property name="text">
+              <string>DEF</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QSpinBox" name="evDEFBox">
+             <property name="maximum">
+              <number>255</number>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="2">
+            <widget class="QLabel" name="label_6">
+             <property name="text">
+              <string>Speed</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="3">
+            <widget class="QSpinBox" name="evSpeedBox">
+             <property name="maximum">
+              <number>255</number>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="QLabel" name="label">
+             <property name="text">
+              <string>HP</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+     <zorder>groupBox_2</zorder>
+     <zorder>evGroup</zorder>
+     <zorder>groupBox</zorder>
+     <zorder>groupBox_5</zorder>
+    </widget>
+    <widget class="QWidget" name="pokemon2">
+     <attribute name="title">
+      <string>Pokemon 2</string>
+     </attribute>
+     <layout class="QGridLayout" name="gridLayout_62">
+      <item row="0" column="0">
+       <widget class="QGroupBox" name="groupBox_10">
+        <property name="title">
+         <string>Pokemon</string>
+        </property>
+        <widget class="QComboBox" name="speciesBox_2">
+         <property name="geometry">
+          <rect>
+           <x>84</x>
+           <y>46</y>
+           <width>78</width>
+           <height>24</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_238">
+         <property name="geometry">
+          <rect>
+           <x>17</x>
+           <y>46</y>
+           <width>43</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Species</string>
+         </property>
+        </widget>
+        <widget class="QComboBox" name="abilityBox_2">
+         <property name="geometry">
+          <rect>
+           <x>84</x>
+           <y>76</y>
+           <width>78</width>
+           <height>24</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_239">
+         <property name="geometry">
+          <rect>
+           <x>17</x>
+           <y>76</y>
+           <width>35</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Ability</string>
+         </property>
+        </widget>
+        <widget class="QComboBox" name="natureBox_2">
+         <property name="geometry">
+          <rect>
+           <x>84</x>
+           <y>106</y>
+           <width>78</width>
+           <height>24</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_240">
+         <property name="geometry">
+          <rect>
+           <x>17</x>
+           <y>106</y>
+           <width>38</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Nature</string>
+         </property>
+        </widget>
+       </widget>
+      </item>
+      <item row="0" column="1" rowspan="2">
+       <widget class="QGroupBox" name="groupBox_9">
+        <property name="title">
+         <string>IV Points</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_58">
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_232">
+           <property name="text">
+            <string>HP</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QSpinBox" name="ivHPBox_2"/>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_233">
+           <property name="text">
+            <string>ATK</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="QLabel" name="label_234">
+           <property name="text">
+            <string>DEF</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="0">
+          <widget class="QLabel" name="label_235">
+           <property name="text">
+            <string>Sp.ATK</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="0">
+          <widget class="QLabel" name="label_236">
+           <property name="text">
+            <string>Sp.DEF</string>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="0">
+          <widget class="QLabel" name="label_237">
+           <property name="text">
+            <string>Speed</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QSpinBox" name="ivATKBox_2"/>
+         </item>
+         <item row="3" column="1">
+          <widget class="QSpinBox" name="ivDEFBox_2"/>
+         </item>
+         <item row="4" column="1">
+          <widget class="QSpinBox" name="ivSpATKBox_2"/>
+         </item>
+         <item row="5" column="1">
+          <widget class="QSpinBox" name="ivSpDEFBox_2"/>
+         </item>
+         <item row="6" column="1">
+          <widget class="QSpinBox" name="ivSpeedBox_2"/>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QGroupBox" name="groupBox_11">
+        <property name="title">
+         <string>Moves</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_59">
+         <item row="0" column="0">
+          <widget class="QComboBox" name="move1Box_2">
+           <property name="currentText">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QComboBox" name="move3Box_2"/>
+         </item>
+         <item row="1" column="0">
+          <widget class="QComboBox" name="move2Box_2"/>
+         </item>
+         <item row="1" column="1">
+          <widget class="QComboBox" name="move4Box_2"/>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QGroupBox" name="evGroup_4">
+        <property name="whatsThis">
+         <string extracomment="Set EV points "/>
+        </property>
+        <property name="title">
+         <string>EV Points</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_60">
+         <item row="0" column="0">
+          <layout class="QGridLayout" name="gridLayout_61">
+           <item row="0" column="1">
+            <widget class="QSpinBox" name="evHPBox_2">
+             <property name="maximum">
+              <number>255</number>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="2">
+            <widget class="QLabel" name="label_243">
+             <property name="text">
+              <string>SpATK</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="3">
+            <widget class="QSpinBox" name="evSpATKBox_2">
+             <property name="maximum">
+              <number>255</number>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="label_244">
+             <property name="text">
+              <string>ATK</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QSpinBox" name="evATKBox_2">
+             <property name="maximum">
+              <number>255</number>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="2">
+            <widget class="QLabel" name="label_245">
+             <property name="text">
+              <string>SpDEF</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="3">
+            <widget class="QSpinBox" name="evSpDEFBox_2">
+             <property name="maximum">
+              <number>255</number>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QLabel" name="label_246">
+             <property name="text">
+              <string>DEF</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QSpinBox" name="evDEFBox_2">
+             <property name="maximum">
+              <number>255</number>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="2">
+            <widget class="QLabel" name="label_247">
+             <property name="text">
+              <string>Speed</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="3">
+            <widget class="QSpinBox" name="evSpeedBox_2">
+             <property name="maximum">
+              <number>255</number>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="QLabel" name="label_248">
+             <property name="text">
+              <string>HP</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="pokemon3">
+     <attribute name="title">
+      <string>Pokemon 3</string>
+     </attribute>
+     <layout class="QGridLayout" name="gridLayout_65">
+      <item row="0" column="0">
+       <widget class="QGroupBox" name="groupBox_13">
+        <property name="title">
+         <string>Pokemon</string>
+        </property>
+        <widget class="QComboBox" name="speciesBox_3">
+         <property name="geometry">
+          <rect>
+           <x>84</x>
+           <y>46</y>
+           <width>78</width>
+           <height>24</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_68">
+         <property name="geometry">
+          <rect>
+           <x>17</x>
+           <y>46</y>
+           <width>43</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Species</string>
+         </property>
+        </widget>
+        <widget class="QComboBox" name="abilityBox_3">
+         <property name="geometry">
+          <rect>
+           <x>84</x>
+           <y>76</y>
+           <width>78</width>
+           <height>24</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_69">
+         <property name="geometry">
+          <rect>
+           <x>17</x>
+           <y>76</y>
+           <width>35</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Ability</string>
+         </property>
+        </widget>
+        <widget class="QComboBox" name="natureBox_3">
+         <property name="geometry">
+          <rect>
+           <x>84</x>
+           <y>106</y>
+           <width>78</width>
+           <height>24</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_70">
+         <property name="geometry">
+          <rect>
+           <x>17</x>
+           <y>106</y>
+           <width>38</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Nature</string>
+         </property>
+        </widget>
+       </widget>
+      </item>
+      <item row="0" column="1" rowspan="2">
+       <widget class="QGroupBox" name="groupBox_12">
+        <property name="title">
+         <string>IV Points</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_17">
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_62">
+           <property name="text">
+            <string>HP</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QSpinBox" name="ivHPBox_3"/>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_63">
+           <property name="text">
+            <string>ATK</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="QLabel" name="label_64">
+           <property name="text">
+            <string>DEF</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="0">
+          <widget class="QLabel" name="label_65">
+           <property name="text">
+            <string>Sp.ATK</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="0">
+          <widget class="QLabel" name="label_66">
+           <property name="text">
+            <string>Sp.DEF</string>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="0">
+          <widget class="QLabel" name="label_67">
+           <property name="text">
+            <string>Speed</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QSpinBox" name="ivATKBox_3"/>
+         </item>
+         <item row="3" column="1">
+          <widget class="QSpinBox" name="ivDEFBox_3"/>
+         </item>
+         <item row="4" column="1">
+          <widget class="QSpinBox" name="ivSpATKBox_3"/>
+         </item>
+         <item row="5" column="1">
+          <widget class="QSpinBox" name="ivSpDEFBox_3"/>
+         </item>
+         <item row="6" column="1">
+          <widget class="QSpinBox" name="ivSpeedBox_3"/>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QGroupBox" name="groupBox_14">
+        <property name="title">
+         <string>Moves</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_18">
+         <item row="0" column="0">
+          <widget class="QComboBox" name="move1Box_3">
+           <property name="currentText">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QComboBox" name="move3Box_3"/>
+         </item>
+         <item row="1" column="0">
+          <widget class="QComboBox" name="move2Box_3"/>
+         </item>
+         <item row="1" column="1">
+          <widget class="QComboBox" name="move4Box_3"/>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QGroupBox" name="evGroup_5">
+        <property name="whatsThis">
+         <string extracomment="Set EV points "/>
+        </property>
+        <property name="title">
+         <string>EV Points</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_19">
+         <item row="0" column="0">
+          <layout class="QGridLayout" name="gridLayout_20">
+           <item row="0" column="1">
+            <widget class="QSpinBox" name="evHPBox_3">
+             <property name="maximum">
+              <number>255</number>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="2">
+            <widget class="QLabel" name="label_73">
+             <property name="text">
+              <string>SpATK</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="3">
+            <widget class="QSpinBox" name="evSpATKBox_3">
+             <property name="maximum">
+              <number>255</number>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="label_74">
+             <property name="text">
+              <string>ATK</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QSpinBox" name="evATKBox_3">
+             <property name="maximum">
+              <number>255</number>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="2">
+            <widget class="QLabel" name="label_75">
+             <property name="text">
+              <string>SpDEF</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="3">
+            <widget class="QSpinBox" name="evSpDEFBox_3">
+             <property name="maximum">
+              <number>255</number>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QLabel" name="label_76">
+             <property name="text">
+              <string>DEF</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QSpinBox" name="evDEFBox_3">
+             <property name="maximum">
+              <number>255</number>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="2">
+            <widget class="QLabel" name="label_77">
+             <property name="text">
+              <string>Speed</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="3">
+            <widget class="QSpinBox" name="evSpeedBox_3">
+             <property name="maximum">
+              <number>255</number>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="QLabel" name="label_78">
+             <property name="text">
+              <string>HP</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="pokrmon4">
+     <attribute name="title">
+      <string>Pokemon 4</string>
+     </attribute>
+     <layout class="QGridLayout" name="gridLayout_66">
+      <item row="0" column="0">
+       <widget class="QGroupBox" name="groupBox_16">
+        <property name="title">
+         <string>Pokemon</string>
+        </property>
+        <widget class="QComboBox" name="speciesBox_4">
+         <property name="geometry">
+          <rect>
+           <x>84</x>
+           <y>46</y>
+           <width>78</width>
+           <height>24</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_85">
+         <property name="geometry">
+          <rect>
+           <x>17</x>
+           <y>46</y>
+           <width>43</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Species</string>
+         </property>
+        </widget>
+        <widget class="QComboBox" name="abilityBox_4">
+         <property name="geometry">
+          <rect>
+           <x>84</x>
+           <y>76</y>
+           <width>78</width>
+           <height>24</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_86">
+         <property name="geometry">
+          <rect>
+           <x>17</x>
+           <y>76</y>
+           <width>35</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Ability</string>
+         </property>
+        </widget>
+        <widget class="QComboBox" name="natureBox_4">
+         <property name="geometry">
+          <rect>
+           <x>84</x>
+           <y>106</y>
+           <width>78</width>
+           <height>24</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_87">
+         <property name="geometry">
+          <rect>
+           <x>17</x>
+           <y>106</y>
+           <width>38</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Nature</string>
+         </property>
+        </widget>
+       </widget>
+      </item>
+      <item row="0" column="1" rowspan="2">
+       <widget class="QGroupBox" name="groupBox_15">
+        <property name="title">
+         <string>IV Points</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_21">
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_79">
+           <property name="text">
+            <string>HP</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QSpinBox" name="ivHPBox_4"/>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_80">
+           <property name="text">
+            <string>ATK</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="QLabel" name="label_81">
+           <property name="text">
+            <string>DEF</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="0">
+          <widget class="QLabel" name="label_82">
+           <property name="text">
+            <string>Sp.ATK</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="0">
+          <widget class="QLabel" name="label_83">
+           <property name="text">
+            <string>Sp.DEF</string>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="0">
+          <widget class="QLabel" name="label_84">
+           <property name="text">
+            <string>Speed</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QSpinBox" name="ivATKBox_4"/>
+         </item>
+         <item row="3" column="1">
+          <widget class="QSpinBox" name="ivDEFBox_4"/>
+         </item>
+         <item row="4" column="1">
+          <widget class="QSpinBox" name="ivSpATKBox_4"/>
+         </item>
+         <item row="5" column="1">
+          <widget class="QSpinBox" name="ivSpDEFBox_4"/>
+         </item>
+         <item row="6" column="1">
+          <widget class="QSpinBox" name="ivSpeedBox_4"/>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QGroupBox" name="groupBox_17">
+        <property name="title">
+         <string>Moves</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_22">
+         <item row="0" column="0">
+          <widget class="QComboBox" name="move1Box_4">
+           <property name="currentText">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QComboBox" name="move3Box_4"/>
+         </item>
+         <item row="1" column="0">
+          <widget class="QComboBox" name="move2Box_4"/>
+         </item>
+         <item row="1" column="1">
+          <widget class="QComboBox" name="move4Box_4"/>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QGroupBox" name="evGroup_6">
+        <property name="whatsThis">
+         <string extracomment="Set EV points "/>
+        </property>
+        <property name="title">
+         <string>EV Points</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_23">
+         <item row="0" column="0">
+          <layout class="QGridLayout" name="gridLayout_24">
+           <item row="0" column="1">
+            <widget class="QSpinBox" name="evHPBox_4">
+             <property name="maximum">
+              <number>255</number>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="2">
+            <widget class="QLabel" name="label_90">
+             <property name="text">
+              <string>SpATK</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="3">
+            <widget class="QSpinBox" name="evSpATKBox_4">
+             <property name="maximum">
+              <number>255</number>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="label_91">
+             <property name="text">
+              <string>ATK</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QSpinBox" name="evATKBox_4">
+             <property name="maximum">
+              <number>255</number>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="2">
+            <widget class="QLabel" name="label_92">
+             <property name="text">
+              <string>SpDEF</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="3">
+            <widget class="QSpinBox" name="evSpDEFBox_4">
+             <property name="maximum">
+              <number>255</number>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QLabel" name="label_93">
+             <property name="text">
+              <string>DEF</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QSpinBox" name="evDEFBox_4">
+             <property name="maximum">
+              <number>255</number>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="2">
+            <widget class="QLabel" name="label_94">
+             <property name="text">
+              <string>Speed</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="3">
+            <widget class="QSpinBox" name="evSpeedBox_4">
+             <property name="maximum">
+              <number>255</number>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="QLabel" name="label_95">
+             <property name="text">
+              <string>HP</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="pokemon5">
+     <attribute name="title">
+      <string>Pokemon 5</string>
+     </attribute>
+     <layout class="QGridLayout" name="gridLayout_67">
+      <item row="0" column="0">
+       <widget class="QGroupBox" name="groupBox_19">
+        <property name="title">
+         <string>Pokemon</string>
+        </property>
+        <widget class="QComboBox" name="speciesBox_5">
+         <property name="geometry">
+          <rect>
+           <x>84</x>
+           <y>46</y>
+           <width>78</width>
+           <height>24</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_102">
+         <property name="geometry">
+          <rect>
+           <x>17</x>
+           <y>46</y>
+           <width>43</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Species</string>
+         </property>
+        </widget>
+        <widget class="QComboBox" name="abilityBox_5">
+         <property name="geometry">
+          <rect>
+           <x>84</x>
+           <y>76</y>
+           <width>78</width>
+           <height>24</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_103">
+         <property name="geometry">
+          <rect>
+           <x>17</x>
+           <y>76</y>
+           <width>35</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Ability</string>
+         </property>
+        </widget>
+        <widget class="QComboBox" name="natureBox_5">
+         <property name="geometry">
+          <rect>
+           <x>84</x>
+           <y>106</y>
+           <width>78</width>
+           <height>24</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_104">
+         <property name="geometry">
+          <rect>
+           <x>17</x>
+           <y>106</y>
+           <width>38</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Nature</string>
+         </property>
+        </widget>
+       </widget>
+      </item>
+      <item row="0" column="1" rowspan="2">
+       <widget class="QGroupBox" name="groupBox_18">
+        <property name="title">
+         <string>IV Points</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_25">
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_96">
+           <property name="text">
+            <string>HP</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QSpinBox" name="ivHPBox_5"/>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_97">
+           <property name="text">
+            <string>ATK</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="QLabel" name="label_98">
+           <property name="text">
+            <string>DEF</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="0">
+          <widget class="QLabel" name="label_99">
+           <property name="text">
+            <string>Sp.ATK</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="0">
+          <widget class="QLabel" name="label_100">
+           <property name="text">
+            <string>Sp.DEF</string>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="0">
+          <widget class="QLabel" name="label_101">
+           <property name="text">
+            <string>Speed</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QSpinBox" name="ivATKBox_5"/>
+         </item>
+         <item row="3" column="1">
+          <widget class="QSpinBox" name="ivDEFBox_5"/>
+         </item>
+         <item row="4" column="1">
+          <widget class="QSpinBox" name="ivSpATKBox_5"/>
+         </item>
+         <item row="5" column="1">
+          <widget class="QSpinBox" name="ivSpDEFBox_5"/>
+         </item>
+         <item row="6" column="1">
+          <widget class="QSpinBox" name="ivSpeedBox_5"/>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QGroupBox" name="groupBox_20">
+        <property name="title">
+         <string>Moves</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_26">
+         <item row="0" column="0">
+          <widget class="QComboBox" name="move1Box_5">
+           <property name="currentText">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QComboBox" name="move3Box_5"/>
+         </item>
+         <item row="1" column="0">
+          <widget class="QComboBox" name="move2Box_5"/>
+         </item>
+         <item row="1" column="1">
+          <widget class="QComboBox" name="move4Box_5"/>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QGroupBox" name="evGroup_7">
+        <property name="whatsThis">
+         <string extracomment="Set EV points "/>
+        </property>
+        <property name="title">
+         <string>EV Points</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_27">
+         <item row="0" column="0">
+          <layout class="QGridLayout" name="gridLayout_28">
+           <item row="0" column="1">
+            <widget class="QSpinBox" name="evHPBox_5">
+             <property name="maximum">
+              <number>255</number>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="2">
+            <widget class="QLabel" name="label_107">
+             <property name="text">
+              <string>SpATK</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="3">
+            <widget class="QSpinBox" name="evSpATKBox_5">
+             <property name="maximum">
+              <number>255</number>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="label_108">
+             <property name="text">
+              <string>ATK</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QSpinBox" name="evATKBox_5">
+             <property name="maximum">
+              <number>255</number>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="2">
+            <widget class="QLabel" name="label_109">
+             <property name="text">
+              <string>SpDEF</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="3">
+            <widget class="QSpinBox" name="evSpDEFBox_5">
+             <property name="maximum">
+              <number>255</number>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QLabel" name="label_110">
+             <property name="text">
+              <string>DEF</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QSpinBox" name="evDEFBox_5">
+             <property name="maximum">
+              <number>255</number>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="2">
+            <widget class="QLabel" name="label_111">
+             <property name="text">
+              <string>Speed</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="3">
+            <widget class="QSpinBox" name="evSpeedBox_5">
+             <property name="maximum">
+              <number>255</number>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="QLabel" name="label_112">
+             <property name="text">
+              <string>HP</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="pokemon6">
+     <attribute name="title">
+      <string>Pokemon 6</string>
+     </attribute>
+     <layout class="QGridLayout" name="gridLayout_37">
+      <item row="0" column="0">
+       <widget class="QGroupBox" name="groupBox_22">
+        <property name="title">
+         <string>Pokemon</string>
+        </property>
+        <widget class="QComboBox" name="speciesBox_6">
+         <property name="geometry">
+          <rect>
+           <x>84</x>
+           <y>46</y>
+           <width>78</width>
+           <height>24</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_136">
+         <property name="geometry">
+          <rect>
+           <x>17</x>
+           <y>46</y>
+           <width>43</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Species</string>
+         </property>
+        </widget>
+        <widget class="QComboBox" name="abilityBox_6">
+         <property name="geometry">
+          <rect>
+           <x>84</x>
+           <y>76</y>
+           <width>78</width>
+           <height>24</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_137">
+         <property name="geometry">
+          <rect>
+           <x>17</x>
+           <y>76</y>
+           <width>35</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Ability</string>
+         </property>
+        </widget>
+        <widget class="QComboBox" name="natureBox_6">
+         <property name="geometry">
+          <rect>
+           <x>84</x>
+           <y>106</y>
+           <width>78</width>
+           <height>24</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_138">
+         <property name="geometry">
+          <rect>
+           <x>17</x>
+           <y>106</y>
+           <width>38</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Nature</string>
+         </property>
+        </widget>
+       </widget>
+      </item>
+      <item row="0" column="1" rowspan="2">
+       <widget class="QGroupBox" name="groupBox_21">
+        <property name="title">
+         <string>IV Points</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_33">
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_130">
+           <property name="text">
+            <string>HP</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QSpinBox" name="ivHPBox_6"/>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_131">
+           <property name="text">
+            <string>ATK</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="QLabel" name="label_132">
+           <property name="text">
+            <string>DEF</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="0">
+          <widget class="QLabel" name="label_133">
+           <property name="text">
+            <string>Sp.ATK</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="0">
+          <widget class="QLabel" name="label_134">
+           <property name="text">
+            <string>Sp.DEF</string>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="0">
+          <widget class="QLabel" name="label_135">
+           <property name="text">
+            <string>Speed</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QSpinBox" name="ivATKBox_6"/>
+         </item>
+         <item row="3" column="1">
+          <widget class="QSpinBox" name="ivDEFBox_6"/>
+         </item>
+         <item row="4" column="1">
+          <widget class="QSpinBox" name="ivSpATKBox_6"/>
+         </item>
+         <item row="5" column="1">
+          <widget class="QSpinBox" name="ivSpDEFBox_6"/>
+         </item>
+         <item row="6" column="1">
+          <widget class="QSpinBox" name="ivSpeedBox_6"/>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QGroupBox" name="groupBox_23">
+        <property name="title">
+         <string>Moves</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_34">
+         <item row="0" column="0">
+          <widget class="QComboBox" name="move1Box_6">
+           <property name="currentText">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QComboBox" name="move3Box_6"/>
+         </item>
+         <item row="1" column="0">
+          <widget class="QComboBox" name="move2Box_6"/>
+         </item>
+         <item row="1" column="1">
+          <widget class="QComboBox" name="move4Box_6"/>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QGroupBox" name="evGroup_8">
+        <property name="whatsThis">
+         <string extracomment="Set EV points "/>
+        </property>
+        <property name="title">
+         <string>EV Points</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_35">
+         <item row="0" column="0">
+          <layout class="QGridLayout" name="gridLayout_36">
+           <item row="0" column="1">
+            <widget class="QSpinBox" name="evHPBox_6">
+             <property name="maximum">
+              <number>255</number>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="2">
+            <widget class="QLabel" name="label_141">
+             <property name="text">
+              <string>SpATK</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="3">
+            <widget class="QSpinBox" name="evSpATKBox_6">
+             <property name="maximum">
+              <number>255</number>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="label_142">
+             <property name="text">
+              <string>ATK</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QSpinBox" name="evATKBox_6">
+             <property name="maximum">
+              <number>255</number>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="2">
+            <widget class="QLabel" name="label_143">
+             <property name="text">
+              <string>SpDEF</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="3">
+            <widget class="QSpinBox" name="evSpDEFBox_6">
+             <property name="maximum">
+              <number>255</number>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QLabel" name="label_144">
+             <property name="text">
+              <string>DEF</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QSpinBox" name="evDEFBox_6">
+             <property name="maximum">
+              <number>255</number>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="2">
+            <widget class="QLabel" name="label_145">
+             <property name="text">
+              <string>Speed</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="3">
+            <widget class="QSpinBox" name="evSpeedBox_6">
+             <property name="maximum">
+              <number>255</number>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="QLabel" name="label_146">
+             <property name="text">
+              <string>HP</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>10</y>
+      <width>20</width>
+      <height>541</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>80</y>
+      <width>135</width>
+      <height>296</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_68">
+     <item row="0" column="0">
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="0" column="1">
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QPushButton" name="player1Button">
+         <property name="text">
+          <string>Player 1</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="player2Button">
+         <property name="text">
+          <string>Player 2</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="1" column="1">
+      <spacer name="verticalSpacer">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>158</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="2" column="0">
+      <spacer name="horizontalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="2" column="1">
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QPushButton" name="startButton">
+         <property name="text">
+          <string>Start Battle</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="cancelButton">
+         <property name="text">
+          <string>Cancel</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
